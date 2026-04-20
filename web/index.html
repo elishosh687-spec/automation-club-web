@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Automation Club — אוטומציות מותאמות לעסקים קטנים ובינוניים. בלי כלים מוגבלים, בלי פתרונות גנריים. שיחת ייעוץ חינם.">
+<title>Automation Club — אוטומציה מותאמת לעסקים שלא מתפשרים על פתרון גנרי</title>
+
+<!-- Tailwind (CDN) -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Heebo:wght@100..900&family=Assistant:wght@200..800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<!-- Tailwind theme tokens (must stay inline for CDN build) -->
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary-container": "#798098",
+          "secondary": "#d6c4ac",
+          "tertiary-container": "#1d160f",
+          "on-tertiary-container": "#8a7f74",
+          "on-secondary-fixed": "#231a0b",
+          "surface-container-lowest": "#0f0e0d",
+          "surface-container-high": "#2b2a29",
+          "on-tertiary": "#372f26",
+          "surface-container-low": "#1d1b1a",
+          "secondary-fixed-dim": "#d6c4ac",
+          "primary-fixed-dim": "#bec6e0",
+          "primary-container": "#0f172a",
+          "on-primary-fixed-variant": "#3f465c",
+          "primary": "#bec6e0",
+          "tertiary": "#d2c4b8",
+          "surface-dim": "#141312",
+          "on-primary": "#283044",
+          "tertiary-fixed-dim": "#d2c4b8",
+          "outline": "#909097",
+          "error": "#ffb4ab",
+          "surface-bright": "#3b3938",
+          "secondary-container": "#544735",
+          "on-primary-fixed": "#131b2e",
+          "surface-tint": "#bec6e0",
+          "on-error-container": "#ffdad6",
+          "on-tertiary-fixed": "#211a13",
+          "error-container": "#93000a",
+          "inverse-primary": "#565e74",
+          "on-secondary": "#3a2f1e",
+          "on-background": "#e6e1e0",
+          "inverse-surface": "#e6e1e0",
+          "tertiary-fixed": "#eee0d3",
+          "surface-container-highest": "#363433",
+          "surface-container": "#211f1e",
+          "on-surface": "#e6e1e0",
+          "on-error": "#690005",
+          "on-tertiary-fixed-variant": "#4e453c",
+          "on-secondary-fixed-variant": "#514533",
+          "on-surface-variant": "#c6c6cd",
+          "on-secondary-container": "#c7b69e",
+          "inverse-on-surface": "#32302f",
+          "outline-variant": "#45464d",
+          "primary-fixed": "#dae2fd",
+          "secondary-fixed": "#f3e0c7",
+          "surface-variant": "#363433",
+          "surface": "#141312",
+          "background": "#141312"
+        },
+        borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px" },
+        fontFamily: {
+          "headline": ["Heebo", "Manrope", "sans-serif"],
+          "body": ["Assistant", "Heebo", "sans-serif"],
+          "label": ["Assistant", "Heebo", "sans-serif"],
+          "latin-head": ["Newsreader", "serif"],
+          "latin-body": ["Manrope", "sans-serif"]
+        }
+      }
+    }
+  }
+</script>
+
+<!-- App styles -->
+<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" aria-hidden="true"><div></div></div>
+
+<!-- 1. Header / Navbar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+  <div class="flex justify-between items-center px-5 md:px-12 py-4 md:py-5 max-w-[1440px] mx-auto gap-4">
+    <a href="#" class="font-headline text-xl md:text-2xl tracking-tight text-[#f3ebe1] shrink-0">Automation<span class="italic text-secondary"> Club</span></a>
+    <div class="hidden md:flex items-center gap-10">
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="#solution">מה אנחנו עושים</a>
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="#process">תהליך</a>
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="#faq">שאלות נפוצות</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#booking" class="btn-glass btn-glass-primary btn-glass-sm hidden sm:inline-flex">שיחת ייעוץ חינם</a>
+      <button id="menuToggle" class="btn-icon-glass md:hidden" aria-label="פתח תפריט" aria-expanded="false" aria-controls="mobileMenu">
+        <span id="menuIcon" class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="mobile-menu fixed inset-0 z-40 md:hidden" aria-hidden="true">
+  <div class="absolute inset-0 bg-surface/95" style="backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px);"></div>
+  <div class="relative z-10 h-full flex flex-col items-start justify-center px-8 gap-8">
+    <a href="#solution" class="menu-link font-headline font-light text-4xl text-on-surface">מה אנחנו עושים</a>
+    <a href="#process" class="menu-link font-headline font-light text-4xl text-on-surface">תהליך</a>
+    <a href="#use-cases" class="menu-link font-headline font-light text-4xl text-on-surface">דוגמאות</a>
+    <a href="#faq" class="menu-link font-headline font-light text-4xl text-on-surface">שאלות נפוצות</a>
+    <a href="#booking" class="menu-link btn-glass btn-glass-primary btn-glass-lg btn-glass-full mt-6">שיחת ייעוץ חינם</a>
+  </div>
+</div>
+
+<main>
+
+<!-- 2. Hero -->
+<section data-hero-parallax class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-surface">
+  <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAajweFcIub-Ca6GcE-V_EOsRIhCDgho4U_IJyUG7EUxRLZq99R4EVZ_kTwsA-4QtAm7W-LM3ztkGNyhKXaljU9gGOqk_r8iah7_hTUuNR4qCL4d3abFVlZTXXeyaG81sVZymJw6xdQMRbxFJBU-_QOrw2zXb0fT9JFfFyaTu940YQka2B2IpAF4yZNTr1CXMUSxukXd29VfblIR1vhos04Wwg61nrG_BWMrDMMFWhTEuFuHy6O0g3SI2DX6m4M9AsV6b9AiQBZI4" alt=""/>
+    <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
+  </div>
+  <div id="heroBlob1" aria-hidden="true" class="absolute top-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-primary/[0.06] blur-[120px] ambient-blob"></div>
+  <div id="heroBlob2" aria-hidden="true" class="absolute bottom-1/4 left-1/4 w-[360px] h-[360px] rounded-full bg-secondary/[0.05] blur-[130px] ambient-blob" style="animation-duration:18s;animation-delay:-7s"></div>
+
+  <div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 w-full">
+    <div class="max-w-4xl">
+      <span data-reveal="up-sm" class="font-label text-secondary tracking-[0.35em] uppercase text-xs mb-8 block">אוטומציה · AI · אינטגרציות</span>
+      <h1 class="font-headline font-light text-[clamp(3rem,8vw,6rem)] leading-[1.02] tracking-tight text-on-surface mb-8">
+        <span class="mask-line"><span>כמה שעות השבוע</span></span>
+        <span class="mask-line"><span>הולכות על עבודה</span></span>
+        <span class="mask-line"><span class="text-primary font-normal">שיכלה לקרות לבד?</span></span>
+      </h1>
+      <p data-reveal="up" class="font-body text-lg md:text-2xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed font-light">
+        אנחנו בונים לעסקים קטנים ובינוניים אוטומציות מותאמות אישית — שמחברות בין המערכות שכבר יש לך ועובדות בשבילך 24/7. אתה חוזר לסגור עסקאות, לא לנהל משימות.
+      </p>
+      <div data-reveal="up" class="hero-cta-row flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-8 mb-14 sm:mb-16">
+        <a href="#booking" class="btn-glass btn-glass-primary btn-glass-lg">קבע שיחת ייעוץ חינם</a>
+        <a href="#process" class="font-label text-secondary tracking-[0.25em] text-xs uppercase group self-center sm:self-auto">
+          איך זה עובד
+          <span class="block h-[1px] w-0 group-hover:w-full bg-secondary transition-all duration-300 mt-1"></span>
+        </a>
+      </div>
+      <div class="flex flex-col items-start gap-5">
+        <!-- Status pill -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-surface-container-low/70 ghost-border" style="backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="font-label text-[11px] tracking-[0.18em] text-secondary">זמין לפרויקטים חדשים</span>
+        </div>
+        <!-- Trust items -->
+        <ul class="flex flex-col sm:flex-row flex-wrap gap-x-6 gap-y-2.5 text-on-surface-variant/75 font-label text-[11px] tracking-[0.1em]">
+          <li class="flex items-center gap-2">
+            <svg aria-hidden="true" class="w-3.5 h-3.5 text-secondary/80 shrink-0" viewBox="0 0 14 14" fill="none"><path d="M2 7.5 L5.5 11 L12 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>20–30 דקות · ללא התחייבות</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg aria-hidden="true" class="w-3.5 h-3.5 text-secondary/80 shrink-0" viewBox="0 0 14 14" fill="none"><path d="M2 7.5 L5.5 11 L12 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>שלב ניסיון — לא מרוצה, לא משלם</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg aria-hidden="true" class="w-3.5 h-3.5 text-secondary/80 shrink-0" viewBox="0 0 14 14" fill="none"><path d="M2 7.5 L5.5 11 L12 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>קוד ותיעוד שלך, תמיד</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee: Tools & Integrations strip -->
+<div class="marquee-strip" aria-hidden="true" aria-label="Tools and integrations">
+  <div class="marquee-track">
+    <!-- Set 1 -->
+    <span class="marquee-item" title="Integrations"><span class="material-symbols-outlined">hub</span></span>
+    <span class="marquee-item" title="AI"><span class="material-symbols-outlined">psychology</span></span>
+    <span class="marquee-item" title="AI Agents"><span class="material-symbols-outlined">smart_toy</span></span>
+    <span class="marquee-item" title="Automation"><span class="material-symbols-outlined">bolt</span></span>
+    <span class="marquee-item" title="Messaging"><span class="material-symbols-outlined">chat</span></span>
+    <span class="marquee-item" title="E-commerce"><span class="material-symbols-outlined">storefront</span></span>
+    <span class="marquee-item" title="Workflows"><span class="material-symbols-outlined">account_tree</span></span>
+    <span class="marquee-item" title="No-code"><span class="material-symbols-outlined">view_quilt</span></span>
+    <span class="marquee-item" title="APIs"><span class="material-symbols-outlined">api</span></span>
+    <span class="marquee-item" title="Webhooks"><span class="material-symbols-outlined">webhook</span></span>
+    <span class="marquee-item" title="Databases"><span class="material-symbols-outlined">database</span></span>
+    <span class="marquee-item" title="Spreadsheets"><span class="material-symbols-outlined">table_chart</span></span>
+    <span class="marquee-item" title="Payments"><span class="material-symbols-outlined">payments</span></span>
+    <span class="marquee-item" title="CRM"><span class="material-symbols-outlined">contacts</span></span>
+    <span class="marquee-item" title="Ads"><span class="material-symbols-outlined">campaign</span></span>
+    <!-- Set 2 (duplicate for seamless loop) -->
+    <span class="marquee-item"><span class="material-symbols-outlined">hub</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">psychology</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">smart_toy</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">bolt</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">chat</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">storefront</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">account_tree</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">view_quilt</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">api</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">webhook</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">database</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">table_chart</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">payments</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">contacts</span></span>
+    <span class="marquee-item"><span class="material-symbols-outlined">campaign</span></span>
+  </div>
+</div>
+
+<!-- 3. Pain — Editorial Chapter Layout -->
+<section id="pain" class="py-32 md:py-48 bg-surface-container-lowest relative overflow-hidden">
+  <!-- ambient background layers -->
+  <div class="bg-aurora" aria-hidden="true"></div>
+  <div class="bg-particles" aria-hidden="true"></div>
+  <div aria-hidden="true" class="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-secondary/[0.04] blur-[120px] ambient-blob"></div>
+
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+    <div class="relative mb-24 md:mb-40">
+      <!-- Decorative ghost glyph behind the headline -->
+      <span aria-hidden="true" class="ghost-glyph text-[14rem] md:text-[24rem] -top-10 md:-top-16 left-0 md:left-[5%]">§</span>
+
+      <div class="editorial-grid relative">
+        <div class="col-span-12 md:col-span-8">
+          <!-- Eyebrow with leading hairline -->
+          <div data-reveal="up-sm" class="flex items-center gap-3 mb-8">
+            <span class="w-10 h-px bg-secondary/60 shrink-0"></span>
+            <span class="font-label text-secondary tracking-[0.4em] uppercase text-[11px]">המצב היום</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary/70"></span>
+          </div>
+
+          <h2 class="font-headline font-extralight leading-[1.05] text-on-surface" style="font-size:clamp(2.5rem, 11vw, 5.5rem)">
+            <span class="mask-line"><span>אתה לא חסר עבודה.</span></span>
+            <span class="mask-line"><span class="text-primary font-light">אתה חסר שקט.</span></span>
+          </h2>
+
+          <!-- thin divider drawing in from right (RTL start) -->
+          <div data-reveal="up-sm" class="mt-8 md:mt-12 flex items-center gap-4">
+            <div class="h-px flex-1 max-w-[140px] bg-gradient-to-l from-secondary/50 to-transparent"></div>
+            <span class="font-latin-head italic text-secondary/70 text-sm">chapter&nbsp;I</span>
+          </div>
+        </div>
+
+        <div data-reveal="up" class="col-span-12 md:col-span-4 md:col-start-9 self-end md:pb-6 border-r border-secondary/30 pr-5 md:pr-6 mt-8 md:mt-0">
+          <p class="font-body text-on-surface-variant/90 text-base md:text-lg leading-[1.7]">
+            חצי יום הולך על דברים שאמורים לקרות לבד. אתה יודע את זה. פשוט לא היה זמן לעצור ולתקן.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative max-w-[1280px] mx-auto">
+      <article data-reveal="up" class="chapter-row relative grid grid-cols-12 gap-4 md:gap-8 items-start py-14 md:py-20 border-t border-outline-variant/15">
+        <span class="chapter-num ghost-num absolute -top-6 md:-top-14 left-0 md:left-4 text-[12rem] md:text-[20rem] z-0">01</span>
+        <div class="col-span-12 md:col-span-5 relative z-10">
+          <span class="font-label text-secondary/70 tracking-[0.3em] uppercase text-[10px] mb-4 block">Time</span>
+          <h3 class="font-headline text-3xl md:text-5xl text-on-surface leading-[1.1] font-light">
+            שעות הולכות<br/>על עבודה ידנית.
+          </h3>
+        </div>
+        <p class="col-span-12 md:col-span-6 md:col-start-7 font-body text-on-surface-variant text-lg leading-[1.7] relative z-10 md:pt-3">
+          העתק-הדבק בין מערכות, תזכורות, מעקב אחרי לידים, דוחות.
+          <span class="block mt-3 text-primary/80">10–20 שעות בשבוע</span>
+          של עבודה חוזרת שאף אחד לא היה אמור לעשות ביד.
+        </p>
+      </article>
+
+      <article data-reveal="up" class="chapter-row relative grid grid-cols-12 gap-4 md:gap-8 items-start py-14 md:py-20 border-t border-outline-variant/15">
+        <span class="chapter-num ghost-num absolute -top-6 md:-top-14 right-0 md:right-4 text-[12rem] md:text-[20rem] z-0">02</span>
+        <div class="col-span-12 md:col-span-5 md:col-start-8 relative z-10 md:text-left">
+          <span class="font-label text-secondary/70 tracking-[0.3em] uppercase text-[10px] mb-4 block">Leaks</span>
+          <h3 class="font-headline text-3xl md:text-5xl text-on-surface leading-[1.1] font-light">
+            לידים נופלים<br/>בין הכיסאות.
+          </h3>
+        </div>
+        <p class="col-span-12 md:col-span-6 md:row-start-1 md:col-start-1 font-body text-on-surface-variant text-lg leading-[1.7] relative z-10 md:pt-3">
+          ליד נכנס בלילה מהטופס. מחר תתפוס אותו — ואחרי יומיים הוא כבר אצל המתחרה.
+          <span class="block mt-3 text-primary/80">בלי מעקב אוטומטי —</span>
+          כל ליד תלוי בך.
+        </p>
+      </article>
+
+      <article data-reveal="up" class="chapter-row relative grid grid-cols-12 gap-4 md:gap-8 items-start py-14 md:py-20 border-t border-b border-outline-variant/15">
+        <span class="chapter-num ghost-num absolute -top-6 md:-top-14 left-0 md:left-4 text-[12rem] md:text-[20rem] z-0">03</span>
+        <div class="col-span-12 md:col-span-5 relative z-10">
+          <span class="font-label text-secondary/70 tracking-[0.3em] uppercase text-[10px] mb-4 block">Dependency</span>
+          <h3 class="font-headline text-3xl md:text-5xl text-on-surface leading-[1.1] font-light">
+            הכל תלוי בך.
+          </h3>
+        </div>
+        <p class="col-span-12 md:col-span-6 md:col-start-7 font-body text-on-surface-variant text-lg leading-[1.7] relative z-10 md:pt-3">
+          אם לא אתה — זה לא קורה. לא חשבוניות, לא תיאומים, לא מעקב, לא דוחות.
+          <span class="block mt-3 text-primary/80">אי אפשר לחלות, אי אפשר לחופש,</span>
+          ואי אפשר לצמוח.
+        </p>
+      </article>
+    </div>
+
+    <div class="mt-28 md:mt-40 max-w-4xl">
+      <p data-reveal="blur" class="font-headline font-extralight text-3xl md:text-5xl text-on-surface leading-[1.2]">
+        הבעיה היא לא שאתה לא עובד מספיק.
+        <span class="block mt-4 text-on-surface-variant/80">הבעיה היא שכל הזמן שלך הולך על הדברים <span class="text-primary font-light">הלא&#x2011;נכונים</span>.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Divider: Pain → Solution -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 4. Solution -->
+<section id="solution" class="py-32 md:py-40 bg-surface relative overflow-hidden">
+  <div class="bg-particles" aria-hidden="true"></div>
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+    <div class="mb-24 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
+      <div class="md:col-span-8">
+        <span class="font-label text-secondary tracking-[0.35em] uppercase text-xs mb-6 block">הפתרון</span>
+        <h2 class="font-headline font-light text-5xl md:text-6xl text-on-surface leading-tight">
+          אוטומציה שבנויה <span class="text-primary font-normal">סביב העסק שלך</span> — לא להפך.
+        </h2>
+      </div>
+      <div class="md:col-span-4 md:pb-4 border-r border-secondary/30 pr-5 md:pr-6 mt-4 md:mt-0">
+        <p class="font-body text-on-surface-variant text-base md:text-lg leading-[1.7]">
+          במקום לדחוף אותך לתוך כלי מוכן שלא מתאים, אנחנו בוחרים לכל חלק בעסק שלך את הכלי הנכון — ומחברים הכל למערכת אחת שעובדת.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/10 ghost-border rounded-lg overflow-hidden">
+      <div class="bg-surface p-10 md:p-14 group hover:bg-surface-container-low transition-colors duration-500">
+        <div class="flex items-start gap-6">
+          <span class="font-latin-head italic text-4xl text-primary leading-none">i.</span>
+          <div>
+            <h3 class="font-headline text-3xl text-on-surface mb-4">פיתוח ללא גבולות</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">יודע לקוד. אם יש דרישה — יש פתרון. אין "הכלי לא תומך בזה".</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface p-10 md:p-14 group hover:bg-surface-container-low transition-colors duration-500">
+        <div class="flex items-start gap-6">
+          <span class="font-latin-head italic text-4xl text-primary leading-none">ii.</span>
+          <div>
+            <h3 class="font-headline text-3xl text-on-surface mb-4">רואה את התמונה המלאה</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">בוחרים את הכלי הנכון לכל חלק לפי מה שהכי מתאים לעסק שלך. כל המערכת מדברת אחת עם השנייה.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface p-10 md:p-14 group hover:bg-surface-container-low transition-colors duration-500">
+        <div class="flex items-start gap-6">
+          <span class="font-latin-head italic text-4xl text-primary leading-none">iii.</span>
+          <div>
+            <h3 class="font-headline text-3xl text-on-surface mb-4">ליווי שלא נגמר בהשקה</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">ליווי חודשי שמבטיח שהכל ממשיך לעבוד ומשתפר. לא "פרויקט ונעלמנו".</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface p-10 md:p-14 group hover:bg-surface-container-low transition-colors duration-500">
+        <div class="flex items-start gap-6">
+          <span class="font-latin-head italic text-4xl text-primary leading-none">iv.</span>
+          <div>
+            <h3 class="font-headline text-3xl text-on-surface mb-4">מדבר שפה של בעלי עסקים</h3>
+            <p class="font-body text-on-surface-variant leading-relaxed">מתחיל מהבעיה העסקית, לא מהטכנולוגיה. אתה מבין בכל שלב מה קורה ולמה.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider: Solution → Use Cases -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 5. Use Cases — Bento Grid -->
+<section id="use-cases" class="py-32 md:py-44 bg-surface-container-lowest relative overflow-hidden">
+  <div aria-hidden="true" class="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-primary/[0.04] blur-[140px] ambient-blob" style="animation-duration:18s"></div>
+
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative">
+    <div class="mb-20 md:mb-28 grid md:grid-cols-12 gap-8 items-end">
+      <div class="md:col-span-8">
+        <span data-reveal="up-sm" class="font-label text-secondary tracking-[0.4em] uppercase text-[11px] mb-6 block">— דוגמאות נבחרות</span>
+        <h2 class="font-headline font-extralight text-5xl md:text-[4.5rem] text-on-surface leading-[1.05]">
+          <span class="mask-line"><span>ככה זה נראה</span></span>
+          <span class="mask-line"><span class="text-primary font-light">אצל לקוחות.</span></span>
+        </h2>
+      </div>
+      <div data-reveal="up" class="md:col-span-4 border-r border-secondary/30 pr-5 md:pr-6 mt-4 md:mt-0 md:pb-2">
+        <p class="font-body text-on-surface-variant text-base md:text-lg leading-[1.7]">
+          כל עסק שונה, אבל רוב הבעיות חוזרות.<br/>
+          שש אוטומציות שחוסכות שעות מהיום הראשון.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-5 md:grid-rows-[auto_auto_auto] md:auto-rows-fr">
+
+      <article data-reveal="up" class="bento-card md:col-span-2 md:row-span-2 bg-surface-container-low rounded-xl p-10 md:p-14 flex flex-col justify-between min-h-[440px] relative">
+        <svg aria-hidden="true" class="absolute inset-0 w-full h-full opacity-40" viewBox="0 0 400 400" fill="none">
+          <defs>
+            <radialGradient id="node-g" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#bec6e0" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#bec6e0" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <g stroke="#d6c4ac" stroke-opacity="0.22" stroke-width="0.7" fill="none">
+            <line class="anim-flow-stroke" x1="80" y1="80" x2="200" y2="200"/>
+            <line class="anim-flow-stroke" x1="320" y1="100" x2="200" y2="200" style="animation-delay:.25s"/>
+            <line class="anim-flow-stroke" x1="100" y1="320" x2="200" y2="200" style="animation-delay:.5s"/>
+            <line class="anim-flow-stroke" x1="310" y1="310" x2="200" y2="200" style="animation-delay:.75s"/>
+            <line x1="80" y1="80" x2="320" y2="100" stroke-opacity="0.1"/>
+            <line x1="100" y1="320" x2="310" y2="310" stroke-opacity="0.1"/>
+          </g>
+          <g fill="#d6c4ac">
+            <circle class="anim-twinkle-1" cx="80"  cy="80"  r="3"/>
+            <circle class="anim-twinkle-2" cx="320" cy="100" r="3"/>
+            <circle class="anim-twinkle-3" cx="100" cy="320" r="3"/>
+            <circle class="anim-twinkle-4" cx="310" cy="310" r="3"/>
+          </g>
+          <circle class="anim-pulse-node" cx="200" cy="200" r="60" fill="url(#node-g)"/>
+          <circle cx="200" cy="200" r="5" fill="#bec6e0"/>
+        </svg>
+
+        <div class="relative z-10 flex items-start justify-between">
+          <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">Flagship · 01</span>
+          <span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings:'FILL' 1">hub</span>
+        </div>
+        <div class="relative z-10">
+          <h3 class="font-headline text-4xl md:text-[2.75rem] text-on-surface mb-5 leading-[1.1] font-light">
+            לידים אוטומטיים<br/>
+            <span class="text-primary">מכל הערוצים.</span>
+          </h3>
+          <p class="font-body text-on-surface-variant text-[15px] leading-[1.7] max-w-md">
+            טופס, וואטסאפ, אינסטגרם, שיחה — כל ליד נכנס למערכת ניהול הלקוחות, מקבל תיוג ויוצאת אליו חזרה אוטומטית.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="font-label text-[10px] tracking-wider uppercase text-on-surface-variant/70 px-3 py-1 rounded-full ghost-border">CRM</span>
+            <span class="font-label text-[10px] tracking-wider uppercase text-on-surface-variant/70 px-3 py-1 rounded-full ghost-border">WhatsApp</span>
+            <span class="font-label text-[10px] tracking-wider uppercase text-on-surface-variant/70 px-3 py-1 rounded-full ghost-border">Forms</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-reveal="up" class="bento-card md:col-span-1 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between min-h-[210px]">
+        <div class="flex items-start justify-between">
+          <span class="font-label text-secondary/70 tracking-[0.25em] uppercase text-[10px]">02</span>
+          <span class="material-symbols-outlined text-secondary/80 text-[20px]">event_available</span>
+        </div>
+        <div>
+          <h3 class="font-headline text-[22px] text-on-surface leading-tight font-light mb-2">תיאום פגישות ותזכורות</h3>
+          <p class="font-body text-on-surface-variant/90 text-[13px] leading-relaxed">אפס אי-הגעות בהפתעה. תזכורת יום לפני + שעה לפני.</p>
+        </div>
+      </article>
+
+      <article data-reveal="up" class="bento-card md:col-span-1 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between min-h-[210px]">
+        <div class="flex items-start justify-between">
+          <span class="font-label text-secondary/70 tracking-[0.25em] uppercase text-[10px]">03</span>
+          <span class="material-symbols-outlined text-secondary/80 text-[20px]">receipt_long</span>
+        </div>
+        <div>
+          <h3 class="font-headline text-[22px] text-on-surface leading-tight font-light mb-2">חשבוניות וגבייה</h3>
+          <p class="font-body text-on-surface-variant/90 text-[13px] leading-relaxed">יוצאות אוטומטית. תזכורת תשלום עצמה נשלחת. שקט.</p>
+        </div>
+      </article>
+
+      <article data-reveal="up" class="bento-card md:col-span-2 bg-surface-container-low rounded-xl p-10 flex flex-col md:flex-row gap-6 md:gap-10 items-start md:items-center min-h-[220px]">
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-label text-secondary/70 tracking-[0.25em] uppercase text-[10px]">04</span>
+            <span class="w-6 h-px bg-secondary/40"></span>
+            <span class="font-label text-on-surface-variant/60 text-[10px] uppercase tracking-wider">Weekly</span>
+          </div>
+          <h3 class="font-headline text-2xl md:text-[28px] text-on-surface leading-tight font-light mb-2">דוחות שבועיים אוטומטיים.</h3>
+          <p class="font-body text-on-surface-variant/90 text-[14px] leading-relaxed">
+            כל ראשון בבוקר, דוח במייל: מכירות, לידים, מה בטיפול, מה תקוע.
+          </p>
+        </div>
+        <svg aria-hidden="true" class="w-36 h-20 md:w-40 md:h-24 shrink-0" viewBox="0 0 160 80" fill="none">
+          <defs>
+            <linearGradient id="chart-g" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#bec6e0" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#bec6e0" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,60 L20,50 L40,55 L60,40 L80,45 L100,25 L120,30 L140,15 L160,20 L160,80 L0,80 Z" fill="url(#chart-g)"/>
+          <path d="M0,60 L20,50 L40,55 L60,40 L80,45 L100,25 L120,30 L140,15 L160,20" stroke="#bec6e0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <g fill="#d6c4ac"><circle cx="140" cy="15" r="3"/></g>
+        </svg>
+      </article>
+
+      <article data-reveal="up" class="bento-card md:col-span-2 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between min-h-[220px]">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="font-label text-secondary/70 tracking-[0.25em] uppercase text-[10px]">05 · E-commerce</span>
+            <h3 class="font-headline text-2xl md:text-[28px] text-on-surface leading-tight font-light mt-3">Shopify: משלוחים ותקשורת.</h3>
+          </div>
+          <span class="material-symbols-outlined text-secondary/80 text-[22px]">local_shipping</span>
+        </div>
+        <div class="flex items-center gap-2 md:gap-3 mt-6 overflow-hidden">
+          <span class="font-label text-[11px] text-on-surface-variant/80 px-3 py-1.5 rounded-full ghost-border shrink-0">הזמנה</span>
+          <span class="text-secondary/50 text-xs">←</span>
+          <span class="font-label text-[11px] text-on-surface-variant/80 px-3 py-1.5 rounded-full ghost-border shrink-0">תווית</span>
+          <span class="text-secondary/50 text-xs">←</span>
+          <span class="font-label text-[11px] text-on-surface-variant/80 px-3 py-1.5 rounded-full ghost-border shrink-0">WhatsApp</span>
+          <span class="text-secondary/50 text-xs">←</span>
+          <span class="font-label text-[11px] text-on-primary bg-gradient-to-br from-primary to-primary-container px-3 py-1.5 rounded-full shrink-0">ביקורת</span>
+        </div>
+      </article>
+
+      <article data-reveal="up" class="bento-card md:col-span-2 bg-gradient-to-br from-surface-container to-surface-container-low rounded-xl p-10 flex flex-col justify-between min-h-[220px] relative overflow-hidden">
+        <svg aria-hidden="true" class="absolute -left-24 -bottom-24 w-[340px] h-[340px] opacity-30" viewBox="0 0 200 200" fill="none">
+          <g class="anim-spin-slow" style="transform-origin:100px 100px">
+            <circle cx="100" cy="100" r="80" stroke="#d6c4ac" stroke-opacity="0.2" stroke-width="1"/>
+            <circle class="anim-twinkle-1" cx="100" cy="20" r="2.5" fill="#bec6e0"/>
+            <circle class="anim-twinkle-3" cx="155" cy="145" r="2.5" fill="#d6c4ac"/>
+            <circle class="anim-twinkle-2" cx="45"  cy="130" r="2" fill="#d6c4ac" fill-opacity="0.6"/>
+          </g>
+          <g class="anim-spin-slow-reverse" style="transform-origin:100px 100px">
+            <circle cx="100" cy="100" r="55" stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="1"/>
+          </g>
+          <circle cx="100" cy="100" r="30" stroke="#bec6e0" stroke-opacity="0.5" stroke-width="1"/>
+        </svg>
+        <div class="flex items-start justify-between relative z-10">
+          <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">06 · Intelligence</span>
+          <span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings:'FILL' 1">smart_toy</span>
+        </div>
+        <div class="relative z-10 max-w-md">
+          <h3 class="font-headline text-2xl md:text-[32px] text-on-surface leading-[1.15] font-light mb-3">
+            עוזר חכם <span class="text-primary">לשירות ולתפעול.</span>
+          </h3>
+          <p class="font-body text-on-surface-variant/90 text-[14px] leading-relaxed">
+            עונה ללקוחות 24/7, מסכם שיחות מכירה, ממיין פניות — מעביר אליך רק את מה שצריך טיפול אנושי.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 6. Process -->
+<section id="process" class="py-32 md:py-40 bg-surface relative overflow-hidden">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <div class="mb-24 max-w-3xl">
+      <span class="font-label text-secondary tracking-[0.35em] uppercase text-xs mb-6 block">איך זה עובד</span>
+      <h2 class="font-headline font-light text-5xl md:text-6xl text-on-surface leading-tight mb-6">
+        מהשיחה הראשונה <span class="text-primary font-normal">לעסק שעובד לבד</span><br/>
+        — בחמישה שלבים.
+      </h2>
+      <p class="font-body text-on-surface-variant text-lg leading-relaxed">
+        בלי הפתעות, בלי "נראה תוך כדי". מגדירים מה מודדים, בונים, משיקים, ואז ממשיכים ללוות.
+      </p>
+    </div>
+
+    <ol class="relative max-w-5xl mx-auto" data-process-list>
+      <div class="absolute top-2 bottom-2 right-6 md:right-12 w-px bg-outline-variant/15"></div>
+      <div class="rail-progress absolute top-2 bottom-2 right-6 md:right-12 w-px"></div>
+
+      <li class="step-item relative pr-16 md:pr-28 pb-16">
+        <span class="step-ring absolute right-0 md:right-6 top-0 w-12 h-12 rounded-full flex items-center justify-center font-latin-head italic num-ring text-lg">01</span>
+        <div class="step-body grid md:grid-cols-12 gap-4 md:gap-8 items-baseline">
+          <h3 class="md:col-span-4 font-headline text-3xl md:text-4xl text-on-surface leading-tight">שיחת ייעוץ</h3>
+          <p class="md:col-span-8 font-body text-on-surface-variant leading-relaxed text-lg">
+            20–30 דקות. אנחנו שואלים על העסק, אתה מספר איפה כואב. יוצאים עם כיוון ברור — גם אם החלטת לא להתקדם.
+          </p>
+        </div>
+      </li>
+      <li class="step-item relative pr-16 md:pr-28 pb-16">
+        <span class="step-ring absolute right-0 md:right-6 top-0 w-12 h-12 rounded-full flex items-center justify-center font-latin-head italic num-ring text-lg">02</span>
+        <div class="step-body grid md:grid-cols-12 gap-4 md:gap-8 items-baseline">
+          <h3 class="md:col-span-4 font-headline text-3xl md:text-4xl text-on-surface leading-tight">הצעה מדויקת</h3>
+          <p class="md:col-span-8 font-body text-on-surface-variant leading-relaxed text-lg">
+            תוך 2–3 ימים אתה מקבל מסמך: מה בונים, איך, כמה זמן, כמה זה עולה, ומה נגדיר כהצלחה.
+          </p>
+        </div>
+      </li>
+      <li class="step-item relative pr-16 md:pr-28 pb-16">
+        <span class="step-ring absolute right-0 md:right-6 top-0 w-12 h-12 rounded-full flex items-center justify-center font-latin-head italic num-ring text-lg">03</span>
+        <div class="step-body grid md:grid-cols-12 gap-4 md:gap-8 items-baseline">
+          <h3 class="md:col-span-4 font-headline text-3xl md:text-4xl text-on-surface leading-tight">שלב ניסיון</h3>
+          <p class="md:col-span-8 font-body text-on-surface-variant leading-relaxed text-lg">
+            בונים את החלק הראשון ומראים לך אותו עובד. לא מרוצה? לא משלם. ממשיכים רק אם אתה אומר כן.
+          </p>
+        </div>
+      </li>
+      <li class="step-item relative pr-16 md:pr-28 pb-16">
+        <span class="step-ring absolute right-0 md:right-6 top-0 w-12 h-12 rounded-full flex items-center justify-center font-latin-head italic num-ring text-lg">04</span>
+        <div class="step-body grid md:grid-cols-12 gap-4 md:gap-8 items-baseline">
+          <h3 class="md:col-span-4 font-headline text-3xl md:text-4xl text-on-surface leading-tight">בנייה והשקה</h3>
+          <p class="md:col-span-8 font-body text-on-surface-variant leading-relaxed text-lg">
+            מפתחים את המערכת המלאה, בודקים איתך, ומעבירים לייצור. תיעוד מלא + הדרכה לצוות.
+          </p>
+        </div>
+      </li>
+      <li class="step-item relative pr-16 md:pr-28">
+        <span class="step-ring absolute right-0 md:right-6 top-0 w-12 h-12 rounded-full flex items-center justify-center font-latin-head italic num-ring text-lg">05</span>
+        <div class="step-body grid md:grid-cols-12 gap-4 md:gap-8 items-baseline">
+          <h3 class="md:col-span-4 font-headline text-3xl md:text-4xl text-on-surface leading-tight">ליווי חודשי <span class="text-on-surface-variant/60 text-lg font-body">(אופציונלי)</span></h3>
+          <p class="md:col-span-8 font-body text-on-surface-variant leading-relaxed text-lg">
+            חבילה חודשית לתחזוקה, שיפורים, תוספות ותמיכה. המערכת ממשיכה לחיות ולהשתפר.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Divider: Process → Guarantee -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 7. Guarantee — Statement Layout -->
+<section id="guarantee" class="py-32 md:py-48 bg-surface relative overflow-hidden">
+  <div aria-hidden="true" class="absolute top-0 left-[8%] w-px h-full bg-outline-variant/[0.06]"></div>
+  <div aria-hidden="true" class="absolute top-0 right-[8%] w-px h-full bg-outline-variant/[0.06]"></div>
+  <div aria-hidden="true" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.03] blur-[160px] ambient-blob" style="animation-duration:20s"></div>
+
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
+    <div class="mb-24 md:mb-40 max-w-4xl">
+      <div class="flex items-center gap-5 mb-8">
+        <span class="w-12 h-px bg-secondary/60"></span>
+        <span data-reveal="up-sm" class="font-label text-secondary tracking-[0.5em] uppercase text-[11px]">ההבטחה</span>
+      </div>
+      <h2 class="font-headline font-extralight text-5xl md:text-[6rem] text-on-surface leading-[1.0]">
+        <span class="mask-line"><span>שלוש הבטחות.</span></span>
+        <span class="mask-line"><span class="text-primary font-light">בלי אותיות קטנות.</span></span>
+      </h2>
+      <p data-reveal="up" class="font-body text-on-surface-variant text-lg md:text-xl leading-relaxed mt-10 max-w-xl">
+        אנחנו לא מוכרים לך חתול בשק. הנה בדיוק מה שאתה מקבל — ומה שתמיד יכול להסתמך עליו.
+      </p>
+    </div>
+
+    <div class="max-w-[1280px] mx-auto">
+
+      <article data-reveal="up" class="promise-row grid grid-cols-12 gap-6 md:gap-10 items-start py-16 md:py-24 border-t border-outline-variant/15 relative">
+        <div class="col-span-12 md:col-span-3 relative">
+          <span class="font-latin-head italic font-light text-[6rem] md:text-[9rem] text-secondary/80 leading-[0.8] block">I</span>
+          <span class="font-label text-secondary/60 tracking-[0.3em] uppercase text-[10px] mt-3 block">Trial</span>
+        </div>
+        <div class="col-span-12 md:col-span-5 md:pt-6">
+          <h3 class="font-headline font-light text-3xl md:text-[2.5rem] text-on-surface leading-[1.15]">
+            <span class="promise-line">לא מרוצה משלב הניסיון —</span><br/>
+            <span class="text-primary font-normal">לא משלם.</span>
+          </h3>
+        </div>
+        <div class="col-span-12 md:col-span-4 md:pt-10">
+          <p class="font-body text-on-surface-variant text-lg leading-[1.75]">
+            בונים את החלק הראשון ומראים לך אותו עובד. אם זה לא עונה על הציפיות — אתה יוצא בלי שקל. הסיכון שלנו.
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings:'FILL' 1">check_circle</span>
+            <span class="font-label text-secondary tracking-wider text-xs uppercase">שלב ניסיון · 1–2 שבועות</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-reveal="up" class="promise-row grid grid-cols-12 gap-6 md:gap-10 items-start py-16 md:py-24 border-t border-outline-variant/15 relative">
+        <div class="col-span-12 md:col-span-3 relative md:order-3 md:text-left">
+          <span class="font-latin-head italic font-light text-[6rem] md:text-[9rem] text-secondary/80 leading-[0.8] block">II</span>
+          <span class="font-label text-secondary/60 tracking-[0.3em] uppercase text-[10px] mt-3 block">Ownership</span>
+        </div>
+        <div class="col-span-12 md:col-span-5 md:order-2 md:pt-6">
+          <h3 class="font-headline font-light text-3xl md:text-[2.5rem] text-on-surface leading-[1.15]">
+            <span class="promise-line">הקוד והתיעוד —</span><br/>
+            <span class="text-primary font-normal">שלך.</span>
+          </h3>
+        </div>
+        <div class="col-span-12 md:col-span-4 md:order-1 md:pt-10">
+          <p class="font-body text-on-surface-variant text-lg leading-[1.75]">
+            כל מה שנבנה עובר אליך — קוד, תיעוד, גישות. אפשר להחליף ספק בכל רגע בלי לאבד דבר.
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings:'FILL' 1">vpn_key</span>
+            <span class="font-label text-secondary tracking-wider text-xs uppercase">אפס נעילה</span>
+          </div>
+        </div>
+      </article>
+
+      <article data-reveal="up" class="promise-row grid grid-cols-12 gap-6 md:gap-10 items-start py-16 md:py-24 border-t border-b border-outline-variant/15 relative">
+        <div class="col-span-12 md:col-span-3 relative">
+          <span class="font-latin-head italic font-light text-[6rem] md:text-[9rem] text-secondary/80 leading-[0.8] block">III</span>
+          <span class="font-label text-secondary/60 tracking-[0.3em] uppercase text-[10px] mt-3 block">Metric</span>
+        </div>
+        <div class="col-span-12 md:col-span-5 md:pt-6">
+          <h3 class="font-headline font-light text-3xl md:text-[2.5rem] text-on-surface leading-[1.15]">
+            <span class="promise-line">יעדי הצלחה ברורים</span><br/>
+            <span class="text-primary font-normal">לפני שמתחילים.</span>
+          </h3>
+        </div>
+        <div class="col-span-12 md:col-span-4 md:pt-10">
+          <p class="font-body text-on-surface-variant text-lg leading-[1.75]">
+            מגדירים יחד מה נחשב הצלחה — שעות שנחסכות, לידים שלא נופלים, זמן תגובה. בלי יעדים ברורים, אין פרויקט.
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings:'FILL' 1">show_chart</span>
+            <span class="font-label text-secondary tracking-wider text-xs uppercase">נמדד בשחור על לבן</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="mt-20 md:mt-28 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 max-w-[1280px] mx-auto">
+      <div class="h-px bg-outline-variant/20 flex-1 hidden md:block"></div>
+      <p data-reveal="blur" class="font-headline italic text-xl md:text-2xl text-on-surface-variant/90 font-light">— מה שנחתם, נחתם.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Divider: Guarantee → FAQ -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 8. FAQ -->
+<section id="faq" class="py-32 md:py-40 bg-surface">
+  <div class="max-w-[1100px] mx-auto px-6 md:px-12">
+    <div class="mb-20 max-w-3xl">
+      <span class="font-label text-secondary tracking-[0.35em] uppercase text-xs mb-6 block">שאלות נפוצות</span>
+      <h2 class="font-headline font-light text-5xl md:text-6xl text-on-surface leading-tight">
+        מה שכולם שואלים<br/>
+        <span class="text-primary font-normal">לפני שהם קופצים למים.</span>
+      </h2>
+    </div>
+
+    <div class="flex flex-col">
+      <details open class="group py-8 border-b border-outline-variant/15">
+        <summary class="flex justify-between items-start gap-6">
+          <h3 class="font-headline text-xl md:text-2xl text-on-surface leading-snug pr-2">זה בטח יקר — כמה עולה?</h3>
+          <span class="faq-icon material-symbols-outlined text-secondary shrink-0 mt-1">add</span>
+        </summary>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+          שיחת הייעוץ וההצעה — חינם. הפרויקטים עצמם מתומחרים לפי היקף, ומחיר מדויק מופיע בהצעה לפני שמתחילים. רוב הפרויקטים מחזירים את ההשקעה תוך 2–4 חודשים בזמן שנחסך.
+        </p>
+      </details>
+      <details class="group py-8 border-b border-outline-variant/15">
+        <summary class="flex justify-between items-start gap-6">
+          <h3 class="font-headline text-xl md:text-2xl text-on-surface leading-snug pr-2">אני לא טכני בכלל. אבין מה עושים לי?</h3>
+          <span class="faq-icon material-symbols-outlined text-secondary shrink-0 mt-1">add</span>
+        </summary>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+          כן. אנחנו מסבירים הכל בעברית של בעל עסק — בלי מונחים טכניים. בכל שלב אתה יודע בדיוק מה קורה, למה, וכמה זמן זה ייקח.
+        </p>
+      </details>
+      <details class="group py-8 border-b border-outline-variant/15">
+        <summary class="flex justify-between items-start gap-6">
+          <h3 class="font-headline text-xl md:text-2xl text-on-surface leading-snug pr-2">ניסיתי בעבר פרילנסר / סוכנות וזה לא עבד. למה עכשיו יהיה אחרת?</h3>
+          <span class="faq-icon material-symbols-outlined text-secondary shrink-0 mt-1">add</span>
+        </summary>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+          כי יש ליווי חודשי. רוב הכישלונות לא קורים בהקמה — קורים שלושה חודשים אחרי, כשמשהו נשבר ואין מי שיתקן. אצלנו, הליווי הוא חלק מהחבילה.
+        </p>
+      </details>
+      <details class="group py-8 border-b border-outline-variant/15">
+        <summary class="flex justify-between items-start gap-6">
+          <h3 class="font-headline text-xl md:text-2xl text-on-surface leading-snug pr-2">מה אם אתם נעלמים או עסוקים?</h3>
+          <span class="faq-icon material-symbols-outlined text-secondary shrink-0 mt-1">add</span>
+        </summary>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+          הקוד והתיעוד שלך. אם אנחנו לא זמינים — כל מפתח אחר יכול להרים את זה תוך ימים. בלי תלויות, בלי קופסאות שחורות.
+        </p>
+      </details>
+      <details class="group py-8 border-b border-outline-variant/15">
+        <summary class="flex justify-between items-start gap-6">
+          <h3 class="font-headline text-xl md:text-2xl text-on-surface leading-snug pr-2">העסק שלי קטן מדי בשביל אוטומציה רצינית?</h3>
+          <span class="faq-icon material-symbols-outlined text-secondary shrink-0 mt-1">add</span>
+        </summary>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+          דווקא הפוך. בעסק קטן, כל שעה של בעל העסק יקרה. חיסכון של 10 שעות בשבוע = הפרש בין לצמוח לבין להיחנק.
+        </p>
+      </details>
+      <details class="group py-8 border-b border-outline-variant/15">
+        <summary class="flex justify-between items-start gap-6">
+          <h3 class="font-headline text-xl md:text-2xl text-on-surface leading-snug pr-2">כמה זמן לוקח לראות תוצאות?</h3>
+          <span class="faq-icon material-symbols-outlined text-secondary shrink-0 mt-1">add</span>
+        </summary>
+        <p class="mt-6 font-body text-on-surface-variant leading-relaxed text-lg max-w-3xl">
+          שלב הניסיון — 1–2 שבועות. השקה מלאה של אוטומציה בסיסית — 3–6 שבועות. אוטומציות מורכבות יותר — 2–3 חודשים. בכל מקרה, משלב הניסיון אתה כבר רואה משהו עובד.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Divider: FAQ → Booking -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 9. Booking -->
+<section id="booking" class="py-32 md:py-40 bg-surface-container-lowest">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-start max-w-6xl mx-auto">
+      <div class="md:col-span-5">
+        <span class="font-label text-secondary tracking-[0.35em] uppercase text-xs mb-6 block">מוכן?</span>
+        <h2 class="font-headline font-light text-5xl md:text-6xl text-on-surface leading-tight mb-6">
+          20 דקות עכשיו.<br/>
+          <span class="text-primary font-normal">שעות חוזרות אליך כל שבוע.</span>
+        </h2>
+        <p class="font-body text-on-surface-variant text-lg leading-relaxed mb-10">
+          שיחת ייעוץ קצרה, חינם, בלי התחייבות. יוצאים ממנה עם הבנה ברורה אם יש כאן פתרון — גם אם לא מתקדמים איתנו.
+        </p>
+        <div class="flex flex-col gap-3 pt-6 border-t border-outline-variant/15">
+          <span class="font-label text-[10px] tracking-[0.25em] uppercase text-on-tertiary-container">מה מקבלים</span>
+          <ul class="space-y-3 font-body text-on-surface-variant">
+            <li class="flex items-start gap-3"><span class="text-secondary">—</span> אבחון של הצוואר הבקבוק הכי כבד</li>
+            <li class="flex items-start gap-3"><span class="text-secondary">—</span> כיוון ראשוני לפתרון + הערכת זמן</li>
+            <li class="flex items-start gap-3"><span class="text-secondary">—</span> בלי דחיפות, בלי התחייבות</li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="md:col-span-7 bg-surface-container-low rounded-lg p-8 md:p-12 space-y-6">
+        <div>
+          <label class="block font-label text-xs tracking-[0.2em] uppercase text-on-tertiary-container mb-3" for="name">שם מלא</label>
+          <input id="name" name="name" type="text" required placeholder="איך קוראים לך?" class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/40 px-5 py-4 rounded-sm focus:bg-surface-container-high transition-colors duration-300 font-body"/>
+        </div>
+        <div>
+          <label class="block font-label text-xs tracking-[0.2em] uppercase text-on-tertiary-container mb-3" for="phone">טלפון</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" required placeholder="050-0000000" class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/40 px-5 py-4 rounded-sm focus:bg-surface-container-high transition-colors duration-300 font-body"/>
+        </div>
+        <div>
+          <span class="block font-label text-xs tracking-[0.2em] uppercase text-on-tertiary-container mb-3">איך נוח לך שאצור קשר?</span>
+          <div class="grid grid-cols-3 gap-3">
+            <label class="radio-pill cursor-pointer bg-surface-container hover:bg-surface-container-high transition-colors rounded-sm px-4 py-4 text-center font-body text-sm">
+              <input type="radio" name="channel" value="whatsapp" class="sr-only" checked/>
+              WhatsApp
+            </label>
+            <label class="radio-pill cursor-pointer bg-surface-container hover:bg-surface-container-high transition-colors rounded-sm px-4 py-4 text-center font-body text-sm">
+              <input type="radio" name="channel" value="phone" class="sr-only"/>
+              שיחת טלפון
+            </label>
+            <label class="radio-pill cursor-pointer bg-surface-container hover:bg-surface-container-high transition-colors rounded-sm px-4 py-4 text-center font-body text-sm">
+              <input type="radio" name="channel" value="both" class="sr-only"/>
+              שניהם בסדר
+            </label>
+          </div>
+        </div>
+        <div>
+          <label class="block font-label text-xs tracking-[0.2em] uppercase text-on-tertiary-container mb-3" for="message">ספר לי בקצרה על העסק והבעיה <span class="text-on-surface-variant/50 normal-case tracking-normal text-[11px]">(אופציונלי)</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="איזה עסק? מה לוקח הכי הרבה זמן ביום? (אפשר גם בשיחה)" class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/40 px-5 py-4 rounded-sm focus:bg-surface-container-high transition-colors duration-300 font-body resize-none"></textarea>
+        </div>
+        <button type="submit" class="btn-glass btn-glass-primary btn-glass-lg btn-glass-full mt-2">קבע שיחת ייעוץ</button>
+        <a href="https://wa.me/972525755705" target="_blank" rel="noopener" class="btn-glass btn-glass-lg btn-glass-full flex items-center justify-center gap-3 mt-3">
+          <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          דברו איתנו בוואטסאפ
+        </a>
+        <p class="font-body text-xs text-on-surface-variant/70 text-center leading-relaxed pt-2">
+          חוזרים אליך תוך יום עסקים. הפרטים שלך לא יוצאים לשום מקום.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Footer -->
+<footer class="w-full pt-28 pb-12 bg-surface">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <div class="mb-20 max-w-3xl">
+      <div class="font-headline text-3xl md:text-4xl text-[#f3ebe1] leading-snug">
+        Automation <span class="italic text-secondary">Club</span>
+      </div>
+      <p class="font-body text-on-surface-variant mt-4 text-lg leading-relaxed">
+        אוטומציות מותאמות לעסקים שלא מתפשרים על פתרון גנרי.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 pt-12 border-t border-outline-variant/15">
+      <div>
+        <h4 class="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6">ניווט</h4>
+        <ul class="space-y-3">
+          <li><a href="#solution" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">מה אנחנו עושים</a></li>
+          <li><a href="#process" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">תהליך</a></li>
+          <li><a href="#faq" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">שאלות נפוצות</a></li>
+          <li><a href="#booking" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">שיחת ייעוץ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6">קישורים</h4>
+        <ul class="space-y-3">
+          <li><span class="font-body text-sm text-on-surface/40">על <span class="text-[11px] opacity-70">(בהמשך)</span></span></li>
+          <li><span class="font-body text-sm text-on-surface/40">בלוג <span class="text-[11px] opacity-70">(בהמשך)</span></span></li>
+          <li><a href="#" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">מדיניות פרטיות</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6">יצירת קשר</h4>
+        <ul class="space-y-3">
+          <li><a href="https://wa.me/972525755705" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">WhatsApp · 052-5755705</a></li>
+          <li><a href="mailto:hello@automation-club.co.il" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">hello@automation-club.co.il</a></li>
+          <li><a href="#" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-start md:items-end justify-between">
+        <span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">language</span>
+        <p class="font-label tracking-[0.2em] uppercase text-[10px] text-primary-fixed-dim mt-10">
+          © 2026 Automation Club. כל הזכויות שמורות.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- App scripts -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

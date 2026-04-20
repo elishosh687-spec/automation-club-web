@@ -3,11 +3,14 @@
   "configurations": [
     {
       "name": "web-static",
-      "runtimeExecutable": "python",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\npx.cmd",
       "runtimeArgs": [
-        "-u",
-        "-c",
-        "import os, http.server, socketserver; os.chdir('web'); port=int(os.environ.get('PORT','8000')); h=http.server.SimpleHTTPRequestHandler; h.protocol_version='HTTP/1.0'; srv=socketserver.ThreadingTCPServer(('127.0.0.1', port), h); srv.allow_reuse_address=True; print(f'serving web/ on {port}', flush=True); srv.serve_forever()"
+        "--yes",
+        "serve",
+        "web",
+        "--listen",
+        "8000",
+        "--no-clipboard"
       ],
       "port": 8000,
       "autoPort": true

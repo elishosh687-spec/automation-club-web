@@ -265,7 +265,7 @@
       ticking = false;
       return;
     }
-    const offset = -rect.top * 0.28;  // 28% parallax speed
+    const offset = -rect.top * 0.15;  // 15% parallax speed
     img.style.transform = `translate3d(0, ${offset}px, 0) scale(1.18)`;
     ticking = false;
   }

@@ -21,3 +21,4 @@ npm-debug.log*
 
 # Local Claude settings (keep launch.json shared)
 .claude/settings.local.json
+.vercel

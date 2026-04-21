@@ -126,11 +126,11 @@
 <!-- 2. Hero -->
 <section data-hero-parallax class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-surface">
   <div class="absolute inset-0 z-0">
-    <img class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAajweFcIub-Ca6GcE-V_EOsRIhCDgho4U_IJyUG7EUxRLZq99R4EVZ_kTwsA-4QtAm7W-LM3ztkGNyhKXaljU9gGOqk_r8iah7_hTUuNR4qCL4d3abFVlZTXXeyaG81sVZymJw6xdQMRbxFJBU-_QOrw2zXb0fT9JFfFyaTu940YQka2B2IpAF4yZNTr1CXMUSxukXd29VfblIR1vhos04Wwg61nrG_BWMrDMMFWhTEuFuHy6O0g3SI2DX6m4M9AsV6b9AiQBZI4" alt=""/>
+    <img class="w-full h-full object-cover opacity-35" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAajweFcIub-Ca6GcE-V_EOsRIhCDgho4U_IJyUG7EUxRLZq99R4EVZ_kTwsA-4QtAm7W-LM3ztkGNyhKXaljU9gGOqk_r8iah7_hTUuNR4qCL4d3abFVlZTXXeyaG81sVZymJw6xdQMRbxFJBU-_QOrw2zXb0fT9JFfFyaTu940YQka2B2IpAF4yZNTr1CXMUSxukXd29VfblIR1vhos04Wwg61nrG_BWMrDMMFWhTEuFuHy6O0g3SI2DX6m4M9AsV6b9AiQBZI4" alt=""/>
     <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
   </div>
-  <div id="heroBlob1" aria-hidden="true" class="absolute top-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-primary/[0.06] blur-[120px] ambient-blob"></div>
-  <div id="heroBlob2" aria-hidden="true" class="absolute bottom-1/4 left-1/4 w-[360px] h-[360px] rounded-full bg-secondary/[0.05] blur-[130px] ambient-blob" style="animation-duration:18s;animation-delay:-7s"></div>
+  <div id="heroBlob1" aria-hidden="true" class="absolute top-1/3 right-1/3 w-[280px] h-[280px] rounded-full bg-primary/[0.04] blur-[70px] ambient-blob" style="will-change:transform"></div>
+  <div id="heroBlob2" aria-hidden="true" class="absolute bottom-1/3 left-1/3 w-[240px] h-[240px] rounded-full bg-secondary/[0.035] blur-[70px] ambient-blob" style="animation-duration:22s;animation-delay:-9s;will-change:transform"></div>
 
   <div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 w-full">
     <div class="max-w-4xl">
@@ -216,10 +216,7 @@
 
 <!-- 3. Pain — Editorial Chapter Layout -->
 <section id="pain" class="py-32 md:py-48 bg-surface-container-lowest relative overflow-hidden">
-  <!-- ambient background layers -->
-  <div class="bg-aurora" aria-hidden="true"></div>
-  <div class="bg-particles" aria-hidden="true"></div>
-  <div aria-hidden="true" class="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-secondary/[0.04] blur-[120px] ambient-blob"></div>
+  <div class="bg-scan-line" aria-hidden="true"></div>
 
   <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
     <div class="relative mb-24 md:mb-40">
@@ -302,7 +299,39 @@
       </article>
     </div>
 
-    <div class="mt-28 md:mt-40 max-w-4xl">
+    <div class="mt-28 md:mt-40 max-w-4xl relative">
+      <!-- Task loop terminal -->
+      <div data-reveal="up" class="mb-16 rounded-xl overflow-hidden ghost-border bg-surface-container-low" aria-hidden="true">
+        <!-- terminal top bar -->
+        <div class="flex items-center gap-2 px-5 py-3 border-b border-outline-variant/15 bg-surface-container">
+          <span class="w-2.5 h-2.5 rounded-full bg-outline-variant/40"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-outline-variant/40"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-outline-variant/40"></span>
+          <span class="mr-auto font-label text-[10px] tracking-[0.25em] text-on-surface-variant/40 uppercase">יום עבודה רגיל</span>
+        </div>
+        <!-- scrolling task list -->
+        <div class="task-loop-wrap relative h-44 overflow-hidden px-6 py-4">
+          <ul class="task-loop font-label text-sm tracking-wide leading-[2.6]">
+            <li><span class="text-secondary/50 ml-3">→</span> שלח הצעת מחיר ידנית ללקוח</li>
+            <li><span class="text-secondary/50 ml-3">→</span> העתק פרטים מהטופס לגיליון</li>
+            <li><span class="text-secondary/50 ml-3">→</span> שלח תזכורת פגישה ב-WhatsApp</li>
+            <li><span class="text-secondary/50 ml-3">→</span> עדכן סטטוס ליד ב-CRM</li>
+            <li><span class="text-secondary/50 ml-3">→</span> הכן דוח שבועי ל-Excel</li>
+            <li><span class="text-secondary/50 ml-3">→</span> תאם פגישה ידנית בין לוחות זמנים</li>
+            <li><span class="text-secondary/50 ml-3">→</span> שלח חשבונית ידנית ללקוח</li>
+            <li><span class="text-secondary/50 ml-3">→</span> בדוק אם הליד ענה — שוב</li>
+            <li><span class="text-secondary/50 ml-3">→</span> שלח הצעת מחיר ידנית ללקוח</li>
+            <li><span class="text-secondary/50 ml-3">→</span> העתק פרטים מהטופס לגיליון</li>
+            <li><span class="text-secondary/50 ml-3">→</span> שלח תזכורת פגישה ב-WhatsApp</li>
+            <li><span class="text-secondary/50 ml-3">→</span> עדכן סטטוס ליד ב-CRM</li>
+          </ul>
+          <!-- fades -->
+          <div class="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-surface-container-low to-transparent pointer-events-none"></div>
+          <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-surface-container-low to-transparent pointer-events-none"></div>
+          <div class="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-surface-container-low to-transparent pointer-events-none"></div>
+        </div>
+      </div>
+
       <p data-reveal="blur" class="font-headline font-extralight text-3xl md:text-5xl text-on-surface leading-[1.2]">
         הבעיה היא לא שאתה לא עובד מספיק.
         <span class="block mt-4 text-on-surface-variant/80">הבעיה היא שכל הזמן שלך הולך על הדברים <span class="text-primary font-light">הלא&#x2011;נכונים</span>.</span>
@@ -320,7 +349,6 @@
 
 <!-- 4. Solution -->
 <section id="solution" class="py-32 md:py-40 bg-surface relative overflow-hidden">
-  <div class="bg-particles" aria-hidden="true"></div>
   <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
     <div class="mb-24 grid md:grid-cols-12 gap-6 md:gap-10 items-end">
       <div class="md:col-span-8">

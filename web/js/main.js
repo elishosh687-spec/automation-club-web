@@ -199,8 +199,8 @@
     curY += (targetY - curY) * 0.08;
     // Use `translate` property (separate from transform) so the existing
     // `animation: float-slow` (which uses transform) keeps working.
-    b1.style.translate = `${curX *  18}px ${curY *  18}px`;
-    b2.style.translate = `${curX * -14}px ${curY * -14}px`;
+    b1.style.translate = `${curX *  7}px ${curY *  7}px`;
+    b2.style.translate = `${curX * -5}px ${curY * -5}px`;
 
     const settled = Math.abs(targetX - curX) < 0.001 && Math.abs(targetY - curY) < 0.001;
     if (settled || !inView) { rafId = null; return; }

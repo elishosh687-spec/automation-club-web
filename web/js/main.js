@@ -244,7 +244,57 @@
   setInterval(cycle, 5500);               // then every 5.5s
 })();
 
-/* ---------- 8. Hero background image scroll parallax ---------- */
+/* ---------- 8. Case-study cards — keyboard + anchor flash ---------- */
+(function () {
+  const cards = document.querySelectorAll('.case-card');
+  if (!cards.length) return;
+
+  // Sync aria-expanded with hover/focus state.
+  cards.forEach((card) => {
+    const setExpanded = (val) => card.setAttribute('aria-expanded', val ? 'true' : 'false');
+
+    card.addEventListener('mouseenter', () => setExpanded(true));
+    card.addEventListener('mouseleave', () => {
+      // Keep expanded if focus is still within the card (keyboard nav).
+      if (!card.matches(':focus-within')) setExpanded(false);
+    });
+    card.addEventListener('focusin',  () => setExpanded(true));
+    card.addEventListener('focusout', (e) => {
+      // focusout fires before focus moves — defer check.
+      requestAnimationFrame(() => {
+        if (!card.matches(':focus-within') && !card.matches(':hover')) setExpanded(false);
+      });
+    });
+
+    // Esc collapses the card by blurring focus inside.
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (card.contains(document.activeElement)) {
+          card.blur();
+          if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+        }
+      }
+    });
+  });
+
+  // Anchor flash — when navigating to /work#case-N, briefly pulse the target.
+  function flashTarget() {
+    const hash = window.location.hash;
+    if (!hash || hash.length < 2) return;
+    const el = document.querySelector(hash);
+    if (!el || !el.classList.contains('case-card')) return;
+    // Re-trigger animation by removing + re-adding class.
+    el.classList.remove('is-anchor-flash');
+    void el.offsetWidth;
+    el.classList.add('is-anchor-flash');
+    el.addEventListener('animationend', () => el.classList.remove('is-anchor-flash'), { once: true });
+  }
+  window.addEventListener('hashchange', flashTarget);
+  // On initial load (e.g. landing on /work#case-2 directly), wait a beat for layout.
+  if (window.location.hash) setTimeout(flashTarget, 400);
+})();
+
+/* ---------- 9. Hero background image scroll parallax ---------- */
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 

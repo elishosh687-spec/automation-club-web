@@ -1,0 +1,14 @@
+{
+  "name": "automation-club-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i web/css/tailwind.src.css -o web/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i web/css/tailwind.src.css -o web/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/container-queries": "^0.1.1"
+  }
+}

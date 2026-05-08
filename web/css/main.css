@@ -713,3 +713,387 @@ body.menu-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .bg-particles, .bg-aurora { animation: none !important; }
 }
+
+/* ============================================================
+   14. Case Studies — Cards + Hover Reveal
+   ------------------------------------------------------------
+   Silent Luxury rules:
+     - No 1px solid borders. Surface tonal shifts only.
+     - Glass overlay = surface @ 70% + 24px backdrop blur.
+     - Hover: surface-container -> surface-bright + soft ambient shadow.
+     - Stack chips = secondary-container (warm callout).
+   ============================================================ */
+
+.case-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;                /* rounded-xl */
+  background: #211f1e;                  /* surface-container */
+  isolation: isolate;
+  transition:
+    background .45s cubic-bezier(.2,.8,.2,1),
+    box-shadow .55s cubic-bezier(.2,.8,.2,1),
+    transform .6s cubic-bezier(.2,.8,.2,1);
+  cursor: pointer;
+  outline: none;
+}
+
+.case-card:hover,
+.case-card:focus-within {
+  background: #3b3938;                  /* surface-bright */
+  box-shadow:
+    0 0 0 1px rgba(190,198,224,0.06),   /* ghost border @ 6% — well below 15% rule */
+    0 28px 48px -16px rgba(0,0,0,0.55),
+    0 0 60px -8px rgba(190,198,224,0.10);  /* soft ambient glow */
+  transform: translateY(-2px);
+}
+
+.case-card:focus-visible {
+  box-shadow:
+    0 0 0 2px rgba(190,198,224,0.45),   /* visible focus ring */
+    0 28px 48px -16px rgba(0,0,0,0.55);
+}
+
+/* Visual area — hosts SVG schematic; subtle scale on hover for "lift" */
+.case-card-visual {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  transition: transform .9s cubic-bezier(.2,.8,.2,1), opacity .6s ease;
+  transform-origin: center;
+}
+.case-card:hover .case-card-visual,
+.case-card:focus-within .case-card-visual {
+  transform: scale(1.02);
+}
+
+.case-card-front {
+  position: relative;
+  z-index: 1;
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: opacity .4s ease, transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.case-card:hover .case-card-front,
+.case-card:focus-within .case-card-front {
+  opacity: 0.4;
+  transform: translateY(-6px);
+}
+
+/* Reveal overlay — glass panel sliding up from the bottom edge */
+.case-card-reveal {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 2;
+  background: rgba(20,19,18,0.72);      /* surface @ ~72% */
+  backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(120%);
+  padding: 1.5rem 1.5rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 78%;
+  overflow-y: auto;
+  transform: translateY(100%);
+  opacity: 0;
+  transition:
+    transform .55s cubic-bezier(.22, 1, 0.36, 1),
+    opacity .45s ease;
+  pointer-events: none;
+}
+.case-card-reveal::-webkit-scrollbar { width: 4px; }
+.case-card-reveal::-webkit-scrollbar-thumb { background: rgba(214,196,172,0.2); border-radius: 4px; }
+
+.case-card:hover .case-card-reveal,
+.case-card:focus-within .case-card-reveal {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Stagger inner blocks AFTER container starts moving */
+.case-card-reveal > .reveal-block {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity .35s ease,
+    transform .45s cubic-bezier(.2,.8,.2,1);
+}
+.case-card:hover .case-card-reveal > .reveal-block,
+.case-card:focus-within .case-card-reveal > .reveal-block {
+  opacity: 1;
+  transform: none;
+}
+.case-card:hover .case-card-reveal > .reveal-block:nth-child(1),
+.case-card:focus-within .case-card-reveal > .reveal-block:nth-child(1) { transition-delay: 100ms; }
+.case-card:hover .case-card-reveal > .reveal-block:nth-child(2),
+.case-card:focus-within .case-card-reveal > .reveal-block:nth-child(2) { transition-delay: 180ms; }
+.case-card:hover .case-card-reveal > .reveal-block:nth-child(3),
+.case-card:focus-within .case-card-reveal > .reveal-block:nth-child(3) { transition-delay: 260ms; }
+.case-card:hover .case-card-reveal > .reveal-block:nth-child(4),
+.case-card:focus-within .case-card-reveal > .reveal-block:nth-child(4) { transition-delay: 340ms; }
+
+.reveal-block .eyebrow {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(214,196,172,0.65);        /* secondary @ 65% */
+  margin-bottom: 6px;
+  display: block;
+}
+
+.reveal-block p {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #e6e1e0;                       /* on-surface */
+  margin: 0;
+}
+
+.reveal-block .metric {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.05;
+  color: #bec6e0;                       /* primary */
+  letter-spacing: -0.02em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Stack chips inside reveal */
+.case-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.case-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: scale(0.92);
+  transition:
+    opacity .3s ease,
+    transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.case-card:hover .case-tag,
+.case-card:focus-within .case-tag {
+  opacity: 1;
+  transform: none;
+}
+.case-card:hover .case-tag:nth-child(1),
+.case-card:focus-within .case-tag:nth-child(1) { transition-delay: 230ms; }
+.case-card:hover .case-tag:nth-child(2),
+.case-card:focus-within .case-tag:nth-child(2) { transition-delay: 260ms; }
+.case-card:hover .case-tag:nth-child(3),
+.case-card:focus-within .case-tag:nth-child(3) { transition-delay: 290ms; }
+.case-card:hover .case-tag:nth-child(4),
+.case-card:focus-within .case-tag:nth-child(4) { transition-delay: 320ms; }
+.case-card:hover .case-tag:nth-child(5),
+.case-card:focus-within .case-tag:nth-child(5) { transition-delay: 350ms; }
+
+.case-tag--stack {
+  background: #544735;                  /* secondary-container */
+  color: #f3e0c7;                       /* on-secondary-container */
+}
+
+.case-tag--front {
+  background: rgba(43,42,41,0.6);       /* surface-container-high @ 60% */
+  color: rgba(198,198,205,0.85);        /* on-surface-variant */
+  opacity: 1;                           /* always visible on front */
+  transform: none;
+}
+
+/* Reveal CTA — text-only with hover underline */
+.case-card-cta {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #d6c4ac;                       /* secondary */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  padding-bottom: 4px;
+  margin-top: 6px;
+  align-self: flex-start;
+}
+.case-card-cta::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #d6c4ac;
+  transition: width .35s cubic-bezier(.2,.8,.2,1);
+}
+.case-card:hover .case-card-cta::after,
+.case-card-cta:hover::after,
+.case-card-cta:focus-visible::after {
+  width: 100%;
+}
+.case-card-cta .arrow {
+  display: inline-block;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1);
+}
+.case-card-cta:hover .arrow { transform: translateX(-3px); }  /* RTL: arrow points left */
+
+/* Front meta line — industry / size */
+.case-card-meta {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(198,198,205,0.55);
+}
+
+.case-card-title {
+  font-family: 'Heebo', 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #e6e1e0;
+  margin: 0;
+}
+.case-card-title .accent { color: #bec6e0; }
+
+/* Anchor flash — subtle pulse when card is target of #case-N nav */
+@keyframes case-anchor-flash {
+  0%   { box-shadow: 0 0 0 0 rgba(190,198,224,0.0); transform: scale(1); }
+  20%  { box-shadow: 0 0 0 6px rgba(190,198,224,0.18), 0 0 60px -4px rgba(190,198,224,0.4); transform: scale(1.012); }
+  100% { box-shadow: 0 0 0 0 rgba(190,198,224,0.0); transform: scale(1); }
+}
+.case-card.is-anchor-flash {
+  animation: case-anchor-flash 1.4s cubic-bezier(.2,.8,.2,1);
+}
+
+/* SVG schematic helpers */
+.svg-schematic {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@keyframes case4-cell-cycle {
+  0%, 100% { fill-opacity: 0.18; }
+  10%      { fill-opacity: 0.85; }
+  30%      { fill-opacity: 0.18; }
+}
+.case4-cell { fill: #bec6e0; transform-origin: center; }
+.case4-cell.c1 { animation: case4-cell-cycle 4.5s ease-in-out infinite;        }
+.case4-cell.c2 { animation: case4-cell-cycle 4.5s ease-in-out 0.5s infinite;   }
+.case4-cell.c3 { animation: case4-cell-cycle 4.5s ease-in-out 1.0s infinite;   }
+.case4-cell.c4 { animation: case4-cell-cycle 4.5s ease-in-out 1.5s infinite;   }
+.case4-cell.c5 { animation: case4-cell-cycle 4.5s ease-in-out 2.0s infinite;   }
+.case4-cell.c6 { animation: case4-cell-cycle 4.5s ease-in-out 2.5s infinite;   }
+.case4-cell.c7 { animation: case4-cell-cycle 4.5s ease-in-out 3.0s infinite;   }
+.case4-cell.c8 { animation: case4-cell-cycle 4.5s ease-in-out 3.5s infinite;   }
+.case4-cell.c9 { animation: case4-cell-cycle 4.5s ease-in-out 4.0s infinite;   }
+
+@keyframes case5-ring-pulse {
+  0%, 100% { transform: scale(1);    opacity: 0.55; }
+  50%      { transform: scale(1.06); opacity: 0.85; }
+}
+.case5-ring { transform-box: fill-box; transform-origin: center; }
+.case5-ring.r1 { animation: case5-ring-pulse 4s ease-in-out infinite; }
+.case5-ring.r2 { animation: case5-ring-pulse 4s ease-in-out 0.6s infinite; }
+.case5-ring.r3 { animation: case5-ring-pulse 4s ease-in-out 1.2s infinite; }
+
+/* Mobile reveal — show always (no hover on touch) */
+@media (max-width: 767px) {
+  .case-card-visual { height: 140px; }
+
+  /* Kill sticky-hover state — tap on touch devices triggers :hover */
+  .case-card:hover,
+  .case-card:focus-within {
+    transform: none;
+    background: #211f1e;          /* surface-container — stay flat */
+    box-shadow: none;
+  }
+  .case-card:hover .case-card-visual,
+  .case-card:focus-within .case-card-visual {
+    transform: none;
+  }
+  .case-card:hover .case-card-front,
+  .case-card:focus-within .case-card-front {
+    opacity: 1;
+    transform: none;
+  }
+
+  .case-card-reveal {
+    position: relative;
+    inset: auto;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    max-height: none;
+    padding: 0 1.5rem 1.5rem;
+  }
+  .case-card-reveal > .reveal-block {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .case-card-front { opacity: 1 !important; transform: none !important; }
+  .case-tag {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Battery savers — heavy bg layers softened on mobile */
+  .bg-aurora { display: none; }     /* 40px blur conic-gradient = drain */
+  .bg-particles { opacity: 0.4; }   /* still visible, less work */
+
+  /* Slow expensive SVG spins (less repaint) */
+  .anim-spin-slow         { animation-duration: 90s !important; }
+  .anim-spin-slow-reverse { animation-duration: 75s !important; }
+}
+
+/* Reduced motion — disable slide/scale/cycle, keep opacity-only */
+@media (prefers-reduced-motion: reduce) {
+  .case-card,
+  .case-card-visual,
+  .case-card-front,
+  .case-card-reveal,
+  .case-card-reveal > .reveal-block,
+  .case-tag,
+  .case-card-cta::after,
+  .case-card-cta .arrow {
+    transition-duration: 0s !important;
+    animation: none !important;
+    transform: none !important;
+  }
+  .case-card-reveal {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .case-card-reveal > .reveal-block,
+  .case-tag {
+    opacity: 1;
+  }
+  .case4-cell, .case5-ring {
+    animation: none !important;
+    fill-opacity: 0.4 !important;
+  }
+  .case-card.is-anchor-flash { animation: none !important; }
+}

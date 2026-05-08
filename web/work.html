@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="עבודות נבחרות של Automation Club — חמישה פרויקטים אנונימיים. בעיה, גישה, תוצאה."/>
+<title>Automation Club</title>
+
+<!-- Fonts (subset of weights in actual use) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;1,200;1,300&family=Manrope:wght@400;500&family=Heebo:wght@100;300;400;500;700&family=Assistant:wght@200;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap" rel="stylesheet"/>
+
+<!-- Tailwind (pre-built, minified) -->
+<link rel="stylesheet" href="css/tailwind.css"/>
+
+<!-- App styles -->
+<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" aria-hidden="true"><div></div></div>
+
+<!-- 1. Header / Navbar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+  <div class="flex justify-between items-center px-5 md:px-12 py-4 md:py-5 max-w-[1440px] mx-auto gap-4">
+    <a href="/" class="font-headline text-xl md:text-2xl tracking-tight text-[#f3ebe1] shrink-0">Automation<span class="italic text-secondary"> Club</span></a>
+    <div class="hidden md:flex items-center gap-10">
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="/#solution">מה אנחנו עושים</a>
+      <a class="font-body text-sm tracking-wide text-[#f3ebe1] transition-opacity duration-300" href="/work" aria-current="page">עבודות</a>
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="/#process">תהליך</a>
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="/#faq">שאלות נפוצות</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="/#booking" class="btn-glass btn-glass-primary btn-glass-sm hidden sm:inline-flex">שיחת ייעוץ חינם</a>
+      <button id="menuToggle" class="btn-icon-glass md:hidden" aria-label="פתח תפריט" aria-expanded="false" aria-controls="mobileMenu">
+        <span id="menuIcon" class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenu" class="mobile-menu fixed inset-0 z-40 md:hidden" aria-hidden="true">
+  <div class="absolute inset-0 bg-surface/95" style="backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px);"></div>
+  <div class="relative z-10 h-full flex flex-col items-start justify-center px-8 gap-8">
+    <a href="/#solution" class="menu-link font-headline font-light text-4xl text-on-surface">מה אנחנו עושים</a>
+    <a href="/work" class="menu-link font-headline font-light text-4xl text-primary" aria-current="page">עבודות</a>
+    <a href="/#process" class="menu-link font-headline font-light text-4xl text-on-surface">תהליך</a>
+    <a href="/#faq" class="menu-link font-headline font-light text-4xl text-on-surface">שאלות נפוצות</a>
+    <a href="/#booking" class="menu-link btn-glass btn-glass-primary btn-glass-lg btn-glass-full mt-6">שיחת ייעוץ חינם</a>
+  </div>
+</div>
+
+<main>
+
+<!-- 2. Hero — work page -->
+<section class="relative pt-40 md:pt-44 pb-20 md:pb-24 overflow-hidden bg-surface">
+  <!-- Single soft ambient glow (lightweight) -->
+  <div aria-hidden="true" class="absolute top-1/3 right-1/4 w-[260px] h-[260px] rounded-full bg-primary/[0.04] blur-[60px] ambient-blob" style="will-change:transform"></div>
+
+  <div class="relative max-w-[1440px] mx-auto px-6 md:px-12">
+    <div class="grid md:grid-cols-12 gap-8 items-end mb-8">
+      <div class="md:col-span-8">
+        <span data-reveal="up-sm" class="font-label text-secondary tracking-[0.4em] uppercase text-[11px] mb-6 block">— תיק עבודות</span>
+        <h1 class="font-headline font-extralight text-5xl md:text-[5.5rem] text-on-surface leading-[1.02]">
+          <span class="mask-line"><span>חלק מהפרויקטים</span></span>
+          <span class="mask-line"><span class="text-primary font-light">שבנינו.</span></span>
+        </h1>
+      </div>
+      <div data-reveal="up" class="md:col-span-4 border-r border-secondary/30 pr-5 md:pr-6 mt-4 md:mt-0 md:pb-4">
+        <p class="font-body text-on-surface-variant text-base md:text-lg leading-[1.7]">
+          כל פרויקט פותר בעיה אמיתית של בעל עסק אמיתי.<br/>
+          בלי קסמים — רק זמן שחזרנו לכם.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section divider -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 3. Cases Grid -->
+<section id="cases" class="py-16 md:py-24 bg-surface-container-lowest relative overflow-hidden">
+  <div class="relative max-w-[1440px] mx-auto px-6 md:px-12">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+
+      <!-- ============================================================ -->
+      <!-- CASE 1 — בוט לידים חכם → CRM -->
+      <!-- ============================================================ -->
+      <article id="case-1" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="בוט לידים חכם — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="case1-g" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#bec6e0" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#bec6e0" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Lines from sources to center hub -->
+            <g stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="0.8" fill="none">
+              <line class="anim-flow-stroke" x1="60"  y1="60"  x2="200" y2="100"/>
+              <line class="anim-flow-stroke" x1="60"  y1="140" x2="200" y2="100" style="animation-delay:.3s"/>
+              <line class="anim-flow-stroke" x1="340" y1="100" x2="200" y2="100" style="animation-delay:.6s"/>
+            </g>
+            <!-- Source labels (small text) -->
+            <g fill="#c6c6cd" font-family="Manrope, sans-serif" font-size="9" letter-spacing="0.5">
+              <text x="20" y="56">Instagram</text>
+              <text x="20" y="148">Forms</text>
+              <text x="350" y="104" text-anchor="end">CRM</text>
+            </g>
+            <!-- Source nodes -->
+            <g fill="#d6c4ac">
+              <circle class="anim-twinkle-1" cx="60"  cy="60"  r="3.5"/>
+              <circle class="anim-twinkle-2" cx="60"  cy="140" r="3.5"/>
+              <circle class="anim-twinkle-3" cx="340" cy="100" r="3.5"/>
+            </g>
+            <!-- Center hub: AI agent -->
+            <circle class="anim-pulse-node" cx="200" cy="100" r="44" fill="url(#case1-g)"/>
+            <circle cx="200" cy="100" r="6" fill="#bec6e0"/>
+            <text x="200" y="103" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="10" fill="#0f172a">AI</text>
+          </svg>
+        </div>
+
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">01 · CRM</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings:'FILL' 1">smart_toy</span>
+          </div>
+          <h3 class="case-card-title">בוט שעונה <span class="accent">ללקוחות אוטומטית</span></h3>
+          <span class="case-card-meta">יצרנית B2B · מוצרי אריזה</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">מענה ב-3 שניות</span>
+            <span class="case-tag case-tag--front">24/7</span>
+          </div>
+        </div>
+
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט בוט לידים">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>מאות פניות בחודש מאינסטגרם ופייסבוק. עד שבעל העסק חוזר ללקוח — הוא כבר אצל המתחרה.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>בוט חכם שעונה ללקוח תוך 3 שניות בעברית טבעית — בדיוק כמו שבעל העסק היה עונה. את הלידים החמים בלבד הוא מעביר אליו ישירות לוואטסאפ.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">מענה מיידי 24/7</span>
+            <p>אתה נכנס לשיחה רק כשיש לקוח שבאמת רוצה לסגור עסקה. שאר הפניות מטופלות לבד.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 2 — WhatsApp Multi-tenant -->
+      <!-- ============================================================ -->
+      <article id="case-2" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="פלטפורמת WhatsApp רב-לקוחית — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="case2-g" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#d6c4ac" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#d6c4ac" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Outer orbit ring -->
+            <g class="anim-spin-slow" style="transform-origin:200px 100px">
+              <circle cx="200" cy="100" r="78" stroke="#d6c4ac" stroke-opacity="0.18" stroke-width="0.8" fill="none"/>
+              <circle class="anim-twinkle-1" cx="200" cy="22"  r="3"   fill="#d6c4ac"/>
+              <circle class="anim-twinkle-2" cx="278" cy="100" r="2.5" fill="#bec6e0"/>
+              <circle class="anim-twinkle-3" cx="200" cy="178" r="3"   fill="#d6c4ac"/>
+              <circle class="anim-twinkle-4" cx="122" cy="100" r="2.5" fill="#bec6e0"/>
+              <circle class="anim-twinkle-2" cx="255" cy="45"  r="2"   fill="#d6c4ac" fill-opacity="0.6"/>
+              <circle class="anim-twinkle-3" cx="255" cy="155" r="2"   fill="#d6c4ac" fill-opacity="0.6"/>
+              <circle class="anim-twinkle-1" cx="145" cy="155" r="2"   fill="#d6c4ac" fill-opacity="0.6"/>
+              <circle class="anim-twinkle-4" cx="145" cy="45"  r="2"   fill="#d6c4ac" fill-opacity="0.6"/>
+            </g>
+            <!-- Inner orbit reverse -->
+            <g class="anim-spin-slow-reverse" style="transform-origin:200px 100px">
+              <circle cx="200" cy="100" r="50" stroke="#bec6e0" stroke-opacity="0.25" stroke-width="0.8" fill="none" stroke-dasharray="3 4"/>
+            </g>
+            <!-- Core hub -->
+            <circle class="anim-pulse-node" cx="200" cy="100" r="32" fill="url(#case2-g)"/>
+            <circle cx="200" cy="100" r="6" fill="#d6c4ac"/>
+            <text x="200" y="103" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="9" fill="#3a2f1e">core</text>
+          </svg>
+        </div>
+
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">02 · SaaS</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+          </div>
+          <h3 class="case-card-title">מערכת ניהול <span class="accent">לקוחות בוואטסאפ</span></h3>
+          <span class="case-card-meta">שירות לעסקים · multi-brand</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">פי 10 לקוחות</span>
+            <span class="case-tag case-tag--front">בלי תוספת עלויות</span>
+          </div>
+        </div>
+
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט WhatsApp רב-לקוחית">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>כל לקוח חדש לקח שבוע להקים. העסק לא צמח — כל היום הלך על העתקות והתאמות ידניות.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>מערכת אחת שמטפלת בכל הלקוחות יחד, ולא משנה כמה. לקוח חדש מוכן לעבודה תוך חצי שעה — בלי לבנות שום דבר מההתחלה.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">שבוע → חצי שעה</span>
+            <p>אפשר לקבל פי 10 לקוחות חדשים בלי שום תוספת זמן או עלויות. העסק סוף-סוף יכול לצמוח.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 3 — Shopify End-to-End -->
+      <!-- ============================================================ -->
+      <article id="case-3" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="אוטומציית Shopify — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <!-- Pipeline flow: 4 stages right-to-left (RTL) -->
+            <g stroke="#bec6e0" stroke-opacity="0.32" stroke-width="0.8" fill="none">
+              <line class="anim-flow-stroke" x2="80"  y2="100" x1="140" y1="100"/>
+              <line class="anim-flow-stroke" x2="160" y2="100" x1="220" y1="100" style="animation-delay:.2s"/>
+              <line class="anim-flow-stroke" x2="240" y2="100" x1="300" y1="100" style="animation-delay:.4s"/>
+              <line class="anim-flow-stroke" x2="320" y2="100" x1="380" y1="100" style="animation-delay:.6s"/>
+            </g>
+            <!-- 4 stage nodes (RTL: rightmost = first) -->
+            <g>
+              <circle class="anim-pulse-node" cx="350" cy="100" r="22" fill="#bec6e0" fill-opacity="0.18" style="animation-delay:0s"/>
+              <circle cx="350" cy="100" r="5" fill="#bec6e0"/>
+              <text x="350" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd">מוצרים</text>
+
+              <circle class="anim-pulse-node" cx="270" cy="100" r="22" fill="#d6c4ac" fill-opacity="0.18" style="animation-delay:.4s"/>
+              <circle cx="270" cy="100" r="5" fill="#d6c4ac"/>
+              <text x="270" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd">מלאי</text>
+
+              <circle class="anim-pulse-node" cx="190" cy="100" r="22" fill="#bec6e0" fill-opacity="0.18" style="animation-delay:.8s"/>
+              <circle cx="190" cy="100" r="5" fill="#bec6e0"/>
+              <text x="190" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd">תמחור</text>
+
+              <circle class="anim-pulse-node" cx="110" cy="100" r="22" fill="#d6c4ac" fill-opacity="0.18" style="animation-delay:1.2s"/>
+              <circle cx="110" cy="100" r="5" fill="#d6c4ac"/>
+              <text x="110" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd">משלוח</text>
+            </g>
+            <!-- Output indicator (leftmost arrow head) -->
+            <path d="M 80 100 L 90 95 L 90 105 Z" fill="#d6c4ac" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">03 · E-commerce</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">storefront</span>
+          </div>
+          <h3 class="case-card-title">החנות <span class="accent">עובדת לבד</span></h3>
+          <span class="case-card-meta">חנות eCommerce ישראלית</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">סנכרון אוטומטי</span>
+            <span class="case-tag case-tag--front">אפס טעויות</span>
+          </div>
+        </div>
+
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט Shopify">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>שעות ביום הולכות על העתקות בין מערכות — מלאי, מחירים, הזמנות, משלוחים. וטעויות קורות בלי סוף.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>כל פעולות החנות מנוהלות אוטומטית: מוצרים מתעדכנים, מלאי מסונכרן, מחירים משתנים לבד, ומשלוחים יוצאים בלי שאתה צריך לגעת.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">שעות → דקות</span>
+            <p>פעולות שלקחו חצי יום נסגרות עכשיו בדקות. כמעט אפס טעויות. יותר זמן לצמיחה, פחות לתפעול.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 4 — Meta Ads × 9 Accounts -->
+      <!-- ============================================================ -->
+      <article id="case-4" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="ניהול קמפיינים Meta — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <!-- 3x3 grid of accounts cycling -->
+            <g transform="translate(140 30)">
+              <rect class="case4-cell c1" x="0"   y="0"   width="36" height="36" rx="6"/>
+              <rect class="case4-cell c2" x="42"  y="0"   width="36" height="36" rx="6"/>
+              <rect class="case4-cell c3" x="84"  y="0"   width="36" height="36" rx="6"/>
+              <rect class="case4-cell c4" x="0"   y="42"  width="36" height="36" rx="6"/>
+              <rect class="case4-cell c5" x="42"  y="42"  width="36" height="36" rx="6"/>
+              <rect class="case4-cell c6" x="84"  y="42"  width="36" height="36" rx="6"/>
+              <rect class="case4-cell c7" x="0"   y="84"  width="36" height="36" rx="6"/>
+              <rect class="case4-cell c8" x="42"  y="84"  width="36" height="36" rx="6"/>
+              <rect class="case4-cell c9" x="84"  y="84"  width="36" height="36" rx="6"/>
+            </g>
+            <!-- CLI label below -->
+            <text x="200" y="186" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="11" fill="#d6c4ac" fill-opacity="0.7">9 accounts · 1 CLI</text>
+          </svg>
+        </div>
+
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">04 · Marketing</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">grid_view</span>
+          </div>
+          <h3 class="case-card-title">כל הקמפיינים <span class="accent">ממקום אחד</span></h3>
+          <span class="case-card-meta">סוכנות שיווק · 9 חשבונות</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">20+ שעות בשבוע</span>
+            <span class="case-tag case-tag--front">דוחות מיידיים</span>
+          </div>
+        </div>
+
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט קמפיינים Meta">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>מנהל המדיה קופץ בין 9 ממשקים שונים. כל שינוי קטן = העתק-הדבק 9 פעמים. דוחות מגיעים שבוע אחרי שצריך.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>מערכת אחת שמנהלת את כל 9 החשבונות במקביל. שינוי במקום אחד מתפרס מיד על כל הלקוחות הרלוונטיים — בלי העתקות, בלי טעויות.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">9 ממשקים → 1</span>
+            <p>שחרור של 20+ שעות בשבוע. שינויים מתעדכנים ברגע. דוחות בזמן אמת — לא שבוע אחרי.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 5 — Multi-channel AI agent -->
+      <!-- ============================================================ -->
+      <article id="case-5" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="סוכן AI רב-ערוצי — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="case5-g" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#bec6e0" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#bec6e0" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- 3 concentric rings, each pulsing on different phase -->
+            <circle class="case5-ring r1" cx="200" cy="100" r="78" stroke="#bec6e0" stroke-opacity="0.3" stroke-width="0.8" fill="none"/>
+            <circle class="case5-ring r2" cx="200" cy="100" r="56" stroke="#d6c4ac" stroke-opacity="0.35" stroke-width="0.8" fill="none"/>
+            <circle class="case5-ring r3" cx="200" cy="100" r="34" stroke="#bec6e0" stroke-opacity="0.4"  stroke-width="0.8" fill="none"/>
+            <!-- Channel dots on rings -->
+            <g fill="#d6c4ac">
+              <circle class="anim-twinkle-1" cx="278" cy="100" r="3"/>
+              <circle class="anim-twinkle-2" cx="200" cy="22"  r="3"/>
+              <circle class="anim-twinkle-3" cx="122" cy="100" r="3"/>
+              <circle class="anim-twinkle-4" cx="200" cy="178" r="3"/>
+            </g>
+            <g fill="#bec6e0">
+              <circle class="anim-twinkle-2" cx="256" cy="100" r="2.5"/>
+              <circle class="anim-twinkle-4" cx="200" cy="44"  r="2.5"/>
+              <circle class="anim-twinkle-1" cx="144" cy="100" r="2.5"/>
+              <circle class="anim-twinkle-3" cx="200" cy="156" r="2.5"/>
+            </g>
+            <!-- Core agent -->
+            <circle class="anim-pulse-node" cx="200" cy="100" r="22" fill="url(#case5-g)"/>
+            <circle cx="200" cy="100" r="5" fill="#bec6e0"/>
+          </svg>
+        </div>
+
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">05 · AI Agent</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings:'FILL' 1">network_intelligence_history</span>
+          </div>
+          <h3 class="case-card-title">סוכן AI <span class="accent">ששולח הודעות לבד</span></h3>
+          <span class="case-card-meta">מערכת אוטומציה אוטונומית</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">מאות שיחות</span>
+            <span class="case-tag case-tag--front">בלי מעורבות שלך</span>
+          </div>
+        </div>
+
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט סוכן AI רב-ערוצי">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>שליחת הודעות יזומות לעשרות ומאות אנשים במקביל בכמה ערוצי תקשורת — בלתי אפשרי לעשות ידנית. כל פנייה דורשת מסר אחר ותגובה אחרת.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>סוכן AI שעובד עצמאית בלי שום מעורבות שלך. קורא את היסטוריית השיחה עם כל אדם, עונה לפי ההקשר, ומנהל מאות שיחות במקביל — 24 שעות ביממה.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">מאות שיחות פעילות</span>
+            <p>בלי לזכור, בלי לשכוח, בלי שעון. אתה מקבל לקוחות חדשים בלי לעבוד יותר.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 6 — Clinic appointment reminders + waitlist -->
+      <!-- ============================================================ -->
+      <article id="case-6" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="תזכורות פגישות ורשימת המתנה — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <!-- Calendar grid: 7 days × 2 rows (week view) -->
+            <g transform="translate(120 40)">
+              <!-- Row 1 -->
+              <rect x="0"   y="0"  width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="26"  y="0"  width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="52"  y="0"  width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <!-- Empty/cancelled slot (highlighted, pulses) -->
+              <rect class="anim-pulse-node" x="78" y="0" width="22" height="22" rx="3" fill="#d6c4ac" fill-opacity="0.5" stroke="#d6c4ac" stroke-opacity="0.7" stroke-width="1.2"/>
+              <rect x="104" y="0"  width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="130" y="0"  width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="156" y="0"  width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <!-- Row 2 -->
+              <rect x="0"   y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="26"  y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="52"  y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="78"  y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="104" y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="130" y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+              <rect x="156" y="26" width="22" height="22" rx="3" fill="#bec6e0" fill-opacity="0.18"/>
+            </g>
+            <!-- Waitlist queue (3 people on left) -->
+            <g fill="#d6c4ac">
+              <circle class="anim-twinkle-1" cx="50" cy="120" r="5"/>
+              <circle class="anim-twinkle-2" cx="50" cy="138" r="4" fill-opacity="0.7"/>
+              <circle class="anim-twinkle-3" cx="50" cy="154" r="3" fill-opacity="0.5"/>
+            </g>
+            <text x="50" y="178" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd">המתנה</text>
+            <!-- Flow line from waitlist to empty slot -->
+            <line class="anim-flow-stroke" x1="60" y1="120" x2="206" y2="60" stroke="#d6c4ac" stroke-opacity="0.45" stroke-width="0.9"/>
+            <!-- Clock icon top-right -->
+            <circle cx="350" cy="50" r="14" stroke="#bec6e0" stroke-opacity="0.45" stroke-width="1" fill="none"/>
+            <line x1="350" y1="50" x2="350" y2="40" stroke="#bec6e0" stroke-opacity="0.6" stroke-width="1.2"/>
+            <line x1="350" y1="50" x2="357" y2="50" stroke="#bec6e0" stroke-opacity="0.6" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">06 · קליניקה</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">event_repeat</span>
+          </div>
+          <h3 class="case-card-title">פגישות שמתבטלות <span class="accent">מתמלאות לבד</span></h3>
+          <span class="case-card-meta">מרפאה · קליניקת אסתטיקה</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">פחות no-shows</span>
+            <span class="case-tag case-tag--front">רשימת המתנה אוטומטית</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט פגישות">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>שליש מההכנסה היומית הולכת לפח. לקוח לא מגיע, או מתקשר חצי שעה לפני לבטל — הזמן שלך פנוי, ההכנסה נעלמת.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>שולח תזכורת בוואטסאפ יום לפני התור ושעתיים לפני. אם הלקוח מבטל — שולח מיד הזמנה לראשון בתור ברשימת המתנה. הזמן הפנוי מתמלא בלי שאתה מרים טלפון.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">חצי מהביטולים מתמלאים</span>
+            <p>היומן מלא יותר. פחות שיחות תיאום. ההכנסה לא נעלמת בגלל ביטול ברגע האחרון.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 7 — Quote follow-up + invoice payment reminders -->
+      <!-- ============================================================ -->
+      <article id="case-7" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="מעקב הצעות וחשבוניות — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <!-- Document icon (the quote/invoice) on right (RTL: start) -->
+            <g transform="translate(310 50)">
+              <rect width="50" height="64" rx="4" fill="#bec6e0" fill-opacity="0.12" stroke="#bec6e0" stroke-opacity="0.35" stroke-width="1"/>
+              <line x1="8"  y1="14" x2="42" y2="14" stroke="#d6c4ac" stroke-opacity="0.5" stroke-width="1"/>
+              <line x1="8"  y1="22" x2="42" y2="22" stroke="#d6c4ac" stroke-opacity="0.4" stroke-width="1"/>
+              <line x1="8"  y1="30" x2="34" y2="30" stroke="#d6c4ac" stroke-opacity="0.4" stroke-width="1"/>
+              <line x1="8"  y1="42" x2="42" y2="42" stroke="#d6c4ac" stroke-opacity="0.5" stroke-width="1"/>
+              <line x1="8"  y1="50" x2="38" y2="50" stroke="#d6c4ac" stroke-opacity="0.4" stroke-width="1"/>
+            </g>
+            <!-- Timeline horizontal (RTL: from right to left) -->
+            <line x1="50" y1="100" x2="305" y2="100" stroke="#bec6e0" stroke-opacity="0.25" stroke-width="0.8" stroke-dasharray="3 4"/>
+            <!-- Tick 1 — 3 days -->
+            <circle class="anim-pulse-node" cx="240" cy="100" r="14" fill="#d6c4ac" fill-opacity="0.18"/>
+            <circle cx="240" cy="100" r="5" fill="#d6c4ac"/>
+            <text x="240" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="10" fill="#c6c6cd">3 ימים</text>
+            <!-- Tick 2 — 7 days -->
+            <circle class="anim-pulse-node" cx="170" cy="100" r="14" fill="#bec6e0" fill-opacity="0.18" style="animation-delay:.6s"/>
+            <circle cx="170" cy="100" r="5" fill="#bec6e0"/>
+            <text x="170" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="10" fill="#c6c6cd">7 ימים</text>
+            <!-- Tick 3 — 14 days -->
+            <circle class="anim-pulse-node" cx="100" cy="100" r="14" fill="#d6c4ac" fill-opacity="0.18" style="animation-delay:1.2s"/>
+            <circle cx="100" cy="100" r="5" fill="#d6c4ac"/>
+            <text x="100" y="138" text-anchor="middle" font-family="Manrope, sans-serif" font-size="10" fill="#c6c6cd">14 ימים</text>
+            <!-- Customer icon on left -->
+            <circle cx="50" cy="100" r="9" fill="#bec6e0" fill-opacity="0.4"/>
+            <text x="50" y="138" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="9" fill="#bec6e0" fill-opacity="0.85">לקוח</text>
+            <!-- Flow strokes between ticks -->
+            <line class="anim-flow-stroke" x1="226" y1="100" x2="184" y2="100" stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.8"/>
+            <line class="anim-flow-stroke" x1="156" y1="100" x2="114" y2="100" stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.8" style="animation-delay:.3s"/>
+            <line class="anim-flow-stroke" x1="86"  y1="100" x2="60"  y2="100" stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.8" style="animation-delay:.6s"/>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">07 · עוקב אחריך</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+          </div>
+          <h3 class="case-card-title">ההצעות לא נשכחות. <span class="accent">התשלומים מגיעים בזמן.</span></h3>
+          <span class="case-card-meta">קבלן · סוכנות · פרילנסר</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">פי 2 סגירות</span>
+            <span class="case-tag case-tag--front">תשלומים בזמן</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט מעקב הצעות וחשבוניות">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>שלחת הצעת מחיר → שכחת לחזור → ראית שהלקוח כבר חתם אצל מישהו אחר. שלחת חשבונית → שכחת לדרוש → הכסף יושב חודשיים.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>כל הצעה שאתה שולח — המערכת חוזרת ללקוח אוטומטית אחרי 3, 7 ו-14 ימים בוואטסאפ או במייל. כל חשבונית — תזכורת תשלום נשלחת בתאריך שאתה קובע.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">פי 2 סגירות</span>
+            <p>אתה לא צריך לזכור שום דבר. המערכת זוכרת בשבילך — לקוחות סוגרים יותר, התשלומים מגיעים בזמן.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 8 — Call summary → CRM auto-update -->
+      <!-- ============================================================ -->
+      <article id="case-8" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="סיכום שיחות אוטומטי — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <!-- Audio waveform on right (RTL: start) -->
+            <g transform="translate(290 60)" stroke="#d6c4ac" stroke-width="1.5" stroke-linecap="round">
+              <line class="anim-twinkle-1" x1="0"  y1="40" x2="0"  y2="40"/>
+              <line class="anim-twinkle-2" x1="6"  y1="32" x2="6"  y2="48"/>
+              <line class="anim-twinkle-3" x1="12" y1="20" x2="12" y2="60"/>
+              <line class="anim-twinkle-4" x1="18" y1="14" x2="18" y2="66"/>
+              <line class="anim-twinkle-1" x1="24" y1="24" x2="24" y2="56"/>
+              <line class="anim-twinkle-2" x1="30" y1="10" x2="30" y2="70"/>
+              <line class="anim-twinkle-3" x1="36" y1="22" x2="36" y2="58"/>
+              <line class="anim-twinkle-4" x1="42" y1="32" x2="42" y2="48"/>
+              <line class="anim-twinkle-1" x1="48" y1="20" x2="48" y2="60"/>
+              <line class="anim-twinkle-2" x1="54" y1="36" x2="54" y2="44"/>
+            </g>
+            <text x="316" y="156" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd">שיחה</text>
+            <!-- Flow arrow to CRM -->
+            <line class="anim-flow-stroke" x1="270" y1="100" x2="190" y2="100" stroke="#bec6e0" stroke-opacity="0.4" stroke-width="0.9"/>
+            <!-- CRM card on left with filling fields -->
+            <g transform="translate(60 50)">
+              <rect width="120" height="100" rx="6" fill="#bec6e0" fill-opacity="0.06" stroke="#bec6e0" stroke-opacity="0.3" stroke-width="1"/>
+              <text x="10" y="18" font-family="Manrope, sans-serif" font-size="9" fill="#c6c6cd" letter-spacing="0.5">CRM · UPDATE</text>
+              <!-- Field rows being filled -->
+              <line class="anim-flow-stroke" x1="10" y1="34" x2="40" y2="34" stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="0.8"/>
+              <line class="anim-flow-stroke" x1="46" y1="34" x2="110" y2="34" stroke="#bec6e0" stroke-opacity="0.55" stroke-width="0.8" style="animation-delay:.2s"/>
+              <line class="anim-flow-stroke" x1="10" y1="48" x2="40" y2="48" stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="0.8" style="animation-delay:.3s"/>
+              <line class="anim-flow-stroke" x1="46" y1="48" x2="100" y2="48" stroke="#bec6e0" stroke-opacity="0.55" stroke-width="0.8" style="animation-delay:.5s"/>
+              <line class="anim-flow-stroke" x1="10" y1="62" x2="40" y2="62" stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="0.8" style="animation-delay:.6s"/>
+              <line class="anim-flow-stroke" x1="46" y1="62" x2="105" y2="62" stroke="#bec6e0" stroke-opacity="0.55" stroke-width="0.8" style="animation-delay:.8s"/>
+              <line class="anim-flow-stroke" x1="10" y1="76" x2="40" y2="76" stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="0.8" style="animation-delay:.9s"/>
+              <line class="anim-flow-stroke" x1="46" y1="76" x2="92"  y2="76" stroke="#bec6e0" stroke-opacity="0.55" stroke-width="0.8" style="animation-delay:1.1s"/>
+            </g>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">08 · מכירות</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings:'FILL' 1">graphic_eq</span>
+          </div>
+          <h3 class="case-card-title">כל שיחה נכנסת ל-CRM. <span class="accent">בלי הקלדה.</span></h3>
+          <span class="case-card-meta">צוות מכירות B2B · נדל"ן</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">0 דקות תיעוד</span>
+            <span class="case-tag case-tag--front">כלום לא נשכח</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט סיכום שיחות">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>נגמרה שיחה — שעה הולכת על תיעוד. רוב השיחות לא נכנסות ל-CRM בכלל. המנהל זועם, הלקוחות נשכחים, עסקאות נופלות.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>שיחה מסתיימת — סיכום אוטומטי של מה שדיברו, ועדכון מיידי של כל השדות הרלוונטיים בכרטיס הלקוח. אותו דבר מתאים גם לשיחות וואטסאפ.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">0 דקות תיעוד</span>
+            <p>במקום שעה ביום על דוקו — אפס. כל שיחה מתועדת מלא, כל לקוח עם היסטוריה שלמה.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============================================================ -->
+      <!-- CASE 9 — PDF data extraction → accounting/inventory -->
+      <!-- ============================================================ -->
+      <article id="case-9" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="חילוץ נתונים מ-PDF — פרטי פרויקט">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <!-- 3 stacked PDF docs on right (RTL: start) -->
+            <g transform="translate(296 38)">
+              <rect x="14" y="14" width="44" height="58" rx="3" fill="#bec6e0" fill-opacity="0.08" stroke="#bec6e0" stroke-opacity="0.22" stroke-width="0.8"/>
+              <rect x="7"  y="7"  width="44" height="58" rx="3" fill="#bec6e0" fill-opacity="0.10" stroke="#bec6e0" stroke-opacity="0.28" stroke-width="0.8"/>
+              <rect x="0"  y="0"  width="44" height="58" rx="3" fill="#bec6e0" fill-opacity="0.16" stroke="#bec6e0" stroke-opacity="0.45" stroke-width="1"/>
+              <text x="22" y="18" text-anchor="middle" font-family="Newsreader, serif" font-style="italic" font-size="10" fill="#bec6e0" fill-opacity="0.7">PDF</text>
+              <line x1="6"  y1="26" x2="38" y2="26" stroke="#d6c4ac" stroke-opacity="0.45" stroke-width="0.8"/>
+              <line x1="6"  y1="32" x2="34" y2="32" stroke="#d6c4ac" stroke-opacity="0.4"  stroke-width="0.8"/>
+              <line x1="6"  y1="38" x2="38" y2="38" stroke="#d6c4ac" stroke-opacity="0.45" stroke-width="0.8"/>
+              <line x1="6"  y1="44" x2="30" y2="44" stroke="#d6c4ac" stroke-opacity="0.4"  stroke-width="0.8"/>
+              <line x1="6"  y1="50" x2="38" y2="50" stroke="#d6c4ac" stroke-opacity="0.45" stroke-width="0.8"/>
+            </g>
+            <!-- Flow lines from PDF to table (data extraction) -->
+            <line class="anim-flow-stroke" x1="290" y1="60"  x2="160" y2="60"  stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.9"/>
+            <line class="anim-flow-stroke" x1="290" y1="80"  x2="160" y2="80"  stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.9" style="animation-delay:.2s"/>
+            <line class="anim-flow-stroke" x1="290" y1="100" x2="160" y2="100" stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.9" style="animation-delay:.4s"/>
+            <line class="anim-flow-stroke" x1="290" y1="120" x2="160" y2="120" stroke="#d6c4ac" stroke-opacity="0.55" stroke-width="0.9" style="animation-delay:.6s"/>
+            <!-- Structured table on left with cells filling in -->
+            <g transform="translate(40 40)">
+              <rect width="120" height="120" rx="4" fill="#bec6e0" fill-opacity="0.04" stroke="#bec6e0" stroke-opacity="0.3" stroke-width="1"/>
+              <!-- Header row -->
+              <line x1="0" y1="20" x2="120" y2="20" stroke="#bec6e0" stroke-opacity="0.25" stroke-width="0.8"/>
+              <text x="60" y="14" text-anchor="middle" font-family="Manrope, sans-serif" font-size="8" fill="#c6c6cd" letter-spacing="0.5">מערכת חשבונאות</text>
+              <!-- Filled cells -->
+              <rect class="anim-twinkle-1" x="6"  y="28" width="50" height="14" rx="2" fill="#d6c4ac" fill-opacity="0.4"/>
+              <rect class="anim-twinkle-2" x="62" y="28" width="52" height="14" rx="2" fill="#bec6e0" fill-opacity="0.3"/>
+              <rect class="anim-twinkle-3" x="6"  y="48" width="50" height="14" rx="2" fill="#d6c4ac" fill-opacity="0.4"/>
+              <rect class="anim-twinkle-4" x="62" y="48" width="52" height="14" rx="2" fill="#bec6e0" fill-opacity="0.3"/>
+              <rect class="anim-twinkle-1" x="6"  y="68" width="50" height="14" rx="2" fill="#d6c4ac" fill-opacity="0.4" style="animation-delay:.4s"/>
+              <rect class="anim-twinkle-2" x="62" y="68" width="52" height="14" rx="2" fill="#bec6e0" fill-opacity="0.3" style="animation-delay:.4s"/>
+              <rect class="anim-twinkle-3" x="6"  y="88" width="50" height="14" rx="2" fill="#d6c4ac" fill-opacity="0.4" style="animation-delay:.8s"/>
+              <rect class="anim-twinkle-4" x="62" y="88" width="52" height="14" rx="2" fill="#bec6e0" fill-opacity="0.3" style="animation-delay:.8s"/>
+            </g>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">09 · נתונים</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">picture_as_pdf</span>
+          </div>
+          <h3 class="case-card-title">PDF נכנסים. <span class="accent">המערכת מתעדכנת לבד.</span></h3>
+          <span class="case-card-meta">רואה חשבון · חברת שילוח · ניהול מלאי</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">0 הקלדה ידנית</span>
+            <span class="case-tag case-tag--front">אפס טעויות</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="פרטי פרויקט חילוץ PDF">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>מקבל 50-200 חשבוניות PDF בחודש מספקים. כל אחד נראה אחרת. שעות של הקלדה למערכת — וטעויות אנוש שעולות כסף.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>PDF נכנס לתיקייה — המערכת קוראת אותו לבד, מוציאה את הפרטים החשובים (סכום, תאריך, ספק, מספר חשבונית), ומכניסה ישר למערכת חשבונאות שלך.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">200 PDF → 0 הקלדה</span>
+            <p>שעות של עבודה ידנית הופכות לאוטומטיות. אפס טעויות הקלדה. רואה החשבון שלך מתאהב בך.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section divider -->
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 4. CTA — Bottom -->
+<section class="py-24 md:py-32 bg-surface relative overflow-hidden">
+  <div aria-hidden="true" class="absolute top-1/2 left-1/3 w-[220px] h-[220px] -translate-y-1/2 rounded-full bg-primary/[0.05] blur-[60px] ambient-blob"></div>
+
+  <div class="relative max-w-3xl mx-auto px-6 md:px-12 text-center">
+    <span data-reveal="up-sm" class="font-label text-secondary tracking-[0.4em] uppercase text-[11px] mb-6 block">— מוכן?</span>
+    <h2 data-reveal="up-sm" class="font-headline font-extralight text-4xl md:text-6xl text-on-surface leading-[1.1] mb-6">
+      רוצה <span class="text-primary">דבר כזה</span> לעסק שלך?
+    </h2>
+    <p data-reveal="up-sm" class="font-body text-on-surface-variant text-base md:text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+      שיחת גילוי 20–30 דקות. חינם, בלי התחייבות. יוצאים עם הבנה אם יש כאן פתרון — גם אם לא ממשיכים.
+    </p>
+    <div data-reveal="up-sm" class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="/#booking" class="btn-glass btn-glass-primary btn-glass-lg">קבע שיחת גילוי</a>
+      <a href="/" class="btn-glass btn-glass-lg">חזור לעמוד הבית</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Footer -->
+<footer class="w-full pt-28 pb-12 bg-surface">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+    <div class="mb-20 max-w-3xl">
+      <div class="font-headline text-3xl md:text-4xl text-[#f3ebe1] leading-snug">
+        Automation <span class="italic text-secondary">Club</span>
+      </div>
+      <p class="font-body text-on-surface-variant mt-4 text-lg leading-relaxed">
+        אוטומציות מותאמות לעסקים שלא מתפשרים על פתרון גנרי.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 pt-12 border-t border-outline-variant/15">
+      <div>
+        <h4 class="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6">ניווט</h4>
+        <ul class="space-y-3">
+          <li><a href="/#solution" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">מה אנחנו עושים</a></li>
+          <li><a href="/work" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">עבודות</a></li>
+          <li><a href="/#process" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">תהליך</a></li>
+          <li><a href="/#faq" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">שאלות נפוצות</a></li>
+          <li><a href="/#booking" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">שיחת ייעוץ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6">קישורים</h4>
+        <ul class="space-y-3">
+          <li><span class="font-body text-sm text-on-surface/40">על <span class="text-[11px] opacity-70">(בהמשך)</span></span></li>
+          <li><span class="font-body text-sm text-on-surface/40">בלוג <span class="text-[11px] opacity-70">(בהמשך)</span></span></li>
+          <li><a href="#" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">מדיניות פרטיות</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6">יצירת קשר</h4>
+        <ul class="space-y-3">
+          <li><a href="https://wa.me/972525755705" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">WhatsApp · 052-5755705</a></li>
+          <li><a href="mailto:hello@automation-club.co.il" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">hello@automation-club.co.il</a></li>
+          <li><a href="#" class="font-body text-sm text-on-surface/70 hover:text-on-surface transition-colors">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-start md:items-end justify-between">
+        <span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">language</span>
+        <p class="font-label tracking-[0.2em] uppercase text-[10px] text-primary-fixed-dim mt-10">
+          © 2026 Automation Club. כל הזכויות שמורות.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- App scripts -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

@@ -4,84 +4,16 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta name="description" content="Automation Club — אוטומציות מותאמות לעסקים קטנים ובינוניים. בלי כלים מוגבלים, בלי פתרונות גנריים. שיחת ייעוץ חינם.">
-<title>Automation Club — אוטומציה מותאמת לעסקים שלא מתפשרים על פתרון גנרי</title>
+<title>Automation Club</title>
 
-<!-- Tailwind (CDN) -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-<!-- Fonts -->
+<!-- Fonts (subset of weights in actual use) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&family=Heebo:wght@100..900&family=Assistant:wght@200..800&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;1,200;1,300&family=Manrope:wght@400;500&family=Heebo:wght@100;300;400;500;700&family=Assistant:wght@200;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap" rel="stylesheet"/>
 
-<!-- Tailwind theme tokens (must stay inline for CDN build) -->
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "on-primary-container": "#798098",
-          "secondary": "#d6c4ac",
-          "tertiary-container": "#1d160f",
-          "on-tertiary-container": "#8a7f74",
-          "on-secondary-fixed": "#231a0b",
-          "surface-container-lowest": "#0f0e0d",
-          "surface-container-high": "#2b2a29",
-          "on-tertiary": "#372f26",
-          "surface-container-low": "#1d1b1a",
-          "secondary-fixed-dim": "#d6c4ac",
-          "primary-fixed-dim": "#bec6e0",
-          "primary-container": "#0f172a",
-          "on-primary-fixed-variant": "#3f465c",
-          "primary": "#bec6e0",
-          "tertiary": "#d2c4b8",
-          "surface-dim": "#141312",
-          "on-primary": "#283044",
-          "tertiary-fixed-dim": "#d2c4b8",
-          "outline": "#909097",
-          "error": "#ffb4ab",
-          "surface-bright": "#3b3938",
-          "secondary-container": "#544735",
-          "on-primary-fixed": "#131b2e",
-          "surface-tint": "#bec6e0",
-          "on-error-container": "#ffdad6",
-          "on-tertiary-fixed": "#211a13",
-          "error-container": "#93000a",
-          "inverse-primary": "#565e74",
-          "on-secondary": "#3a2f1e",
-          "on-background": "#e6e1e0",
-          "inverse-surface": "#e6e1e0",
-          "tertiary-fixed": "#eee0d3",
-          "surface-container-highest": "#363433",
-          "surface-container": "#211f1e",
-          "on-surface": "#e6e1e0",
-          "on-error": "#690005",
-          "on-tertiary-fixed-variant": "#4e453c",
-          "on-secondary-fixed-variant": "#514533",
-          "on-surface-variant": "#c6c6cd",
-          "on-secondary-container": "#c7b69e",
-          "inverse-on-surface": "#32302f",
-          "outline-variant": "#45464d",
-          "primary-fixed": "#dae2fd",
-          "secondary-fixed": "#f3e0c7",
-          "surface-variant": "#363433",
-          "surface": "#141312",
-          "background": "#141312"
-        },
-        borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px" },
-        fontFamily: {
-          "headline": ["Heebo", "Manrope", "sans-serif"],
-          "body": ["Assistant", "Heebo", "sans-serif"],
-          "label": ["Assistant", "Heebo", "sans-serif"],
-          "latin-head": ["Newsreader", "serif"],
-          "latin-body": ["Manrope", "sans-serif"]
-        }
-      }
-    }
-  }
-</script>
+<!-- Tailwind (pre-built, minified) -->
+<link rel="stylesheet" href="css/tailwind.css"/>
 
 <!-- App styles -->
 <link rel="stylesheet" href="css/main.css"/>
@@ -97,6 +29,7 @@
     <a href="#" class="font-headline text-xl md:text-2xl tracking-tight text-[#f3ebe1] shrink-0">Automation<span class="italic text-secondary"> Club</span></a>
     <div class="hidden md:flex items-center gap-10">
       <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="#solution">מה אנחנו עושים</a>
+      <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="/work">עבודות</a>
       <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="#process">תהליך</a>
       <a class="font-body text-sm tracking-wide text-on-surface/75 hover:text-[#f3ebe1] transition-opacity duration-300" href="#faq">שאלות נפוצות</a>
     </div>
@@ -114,6 +47,7 @@
   <div class="absolute inset-0 bg-surface/95" style="backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px);"></div>
   <div class="relative z-10 h-full flex flex-col items-start justify-center px-8 gap-8">
     <a href="#solution" class="menu-link font-headline font-light text-4xl text-on-surface">מה אנחנו עושים</a>
+    <a href="/work" class="menu-link font-headline font-light text-4xl text-on-surface">עבודות</a>
     <a href="#process" class="menu-link font-headline font-light text-4xl text-on-surface">תהליך</a>
     <a href="#use-cases" class="menu-link font-headline font-light text-4xl text-on-surface">דוגמאות</a>
     <a href="#faq" class="menu-link font-headline font-light text-4xl text-on-surface">שאלות נפוצות</a>
@@ -414,7 +348,7 @@
 
 <!-- 5. Use Cases — Bento Grid -->
 <section id="use-cases" class="py-32 md:py-44 bg-surface-container-lowest relative overflow-hidden">
-  <div aria-hidden="true" class="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-primary/[0.04] blur-[140px] ambient-blob" style="animation-duration:18s"></div>
+  <div aria-hidden="true" class="absolute top-1/3 -left-40 w-[320px] h-[320px] rounded-full bg-primary/[0.04] blur-[70px] ambient-blob" style="animation-duration:18s"></div>
 
   <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative">
     <div class="mb-20 md:mb-28 grid md:grid-cols-12 gap-8 items-end">
@@ -578,6 +512,214 @@
   </div>
 </section>
 
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
+<!-- 5b. Featured Work — case-study highlights -->
+<section id="work" class="py-32 md:py-44 bg-surface relative overflow-hidden">
+  <div aria-hidden="true" class="absolute top-1/4 -right-32 w-[300px] h-[300px] rounded-full bg-secondary/[0.04] blur-[70px] ambient-blob" style="animation-duration:24s"></div>
+
+  <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative">
+    <div class="mb-20 md:mb-28 grid md:grid-cols-12 gap-8 items-end">
+      <div class="md:col-span-8">
+        <span data-reveal="up-sm" class="font-label text-secondary tracking-[0.4em] uppercase text-[11px] mb-6 block">— עבודות נבחרות</span>
+        <h2 class="font-headline font-extralight text-5xl md:text-[4.5rem] text-on-surface leading-[1.05]">
+          <span class="mask-line"><span>ככה זה נראה</span></span>
+          <span class="mask-line"><span class="text-primary font-light">כשזה רץ.</span></span>
+        </h2>
+      </div>
+      <div data-reveal="up" class="md:col-span-4 border-r border-secondary/30 pr-5 md:pr-6 mt-4 md:mt-0 md:pb-2">
+        <p class="font-body text-on-surface-variant text-base md:text-lg leading-[1.7]">
+          שלוש דוגמאות מהשטח.<br/>
+          שמות מוסתרים — מערכות אמיתיות.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+
+      <!-- Highlight 1 — CRM bot -->
+      <article id="work-highlight-1" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="בוט לידים חכם — תקציר">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="hl1-g" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#bec6e0" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#bec6e0" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g stroke="#d6c4ac" stroke-opacity="0.3" stroke-width="0.8" fill="none">
+              <line class="anim-flow-stroke" x1="60"  y1="60"  x2="200" y2="100"/>
+              <line class="anim-flow-stroke" x1="60"  y1="140" x2="200" y2="100" style="animation-delay:.3s"/>
+              <line class="anim-flow-stroke" x1="340" y1="100" x2="200" y2="100" style="animation-delay:.6s"/>
+            </g>
+            <g fill="#d6c4ac">
+              <circle class="anim-twinkle-1" cx="60"  cy="60"  r="3.5"/>
+              <circle class="anim-twinkle-2" cx="60"  cy="140" r="3.5"/>
+              <circle class="anim-twinkle-3" cx="340" cy="100" r="3.5"/>
+            </g>
+            <circle class="anim-pulse-node" cx="200" cy="100" r="44" fill="url(#hl1-g)"/>
+            <circle cx="200" cy="100" r="6" fill="#bec6e0"/>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">01 · CRM</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings:'FILL' 1">smart_toy</span>
+          </div>
+          <h3 class="case-card-title">בוט שעונה <span class="accent">ללקוחות אוטומטית</span></h3>
+          <span class="case-card-meta">יצרנית B2B · מוצרי אריזה</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">מענה ב-3 שניות</span>
+            <span class="case-tag case-tag--front">24/7</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="תקציר בוט לידים">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>מאות פניות בחודש. עד שאתה חוזר ללקוח — הוא כבר אצל המתחרה.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>עונה ללקוח בעברית טבעית תוך 3 שניות. רק לידים חמים מגיעים אליך.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">מענה מיידי 24/7</span>
+            <p>נכנס לשיחה רק כשבאמת צריך לסגור עסקה.</p>
+            <a href="/work#case-1" class="case-card-cta">פירוט מלא <span class="arrow">←</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Highlight 2 — WhatsApp multi-tenant -->
+      <article id="work-highlight-2" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="פלטפורמת WhatsApp רב-לקוחית — תקציר">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id="hl2-g" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#d6c4ac" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#d6c4ac" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g class="anim-spin-slow" style="transform-origin:200px 100px">
+              <circle cx="200" cy="100" r="78" stroke="#d6c4ac" stroke-opacity="0.18" stroke-width="0.8" fill="none"/>
+              <circle class="anim-twinkle-1" cx="200" cy="22"  r="3"   fill="#d6c4ac"/>
+              <circle class="anim-twinkle-2" cx="278" cy="100" r="2.5" fill="#bec6e0"/>
+              <circle class="anim-twinkle-3" cx="200" cy="178" r="3"   fill="#d6c4ac"/>
+              <circle class="anim-twinkle-4" cx="122" cy="100" r="2.5" fill="#bec6e0"/>
+            </g>
+            <g class="anim-spin-slow-reverse" style="transform-origin:200px 100px">
+              <circle cx="200" cy="100" r="50" stroke="#bec6e0" stroke-opacity="0.25" stroke-width="0.8" fill="none" stroke-dasharray="3 4"/>
+            </g>
+            <circle class="anim-pulse-node" cx="200" cy="100" r="32" fill="url(#hl2-g)"/>
+            <circle cx="200" cy="100" r="6" fill="#d6c4ac"/>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">02 · SaaS</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+          </div>
+          <h3 class="case-card-title">מערכת ניהול <span class="accent">לקוחות בוואטסאפ</span></h3>
+          <span class="case-card-meta">שירות לעסקים · multi-brand</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">פי 10 לקוחות</span>
+            <span class="case-tag case-tag--front">בלי תוספת עלויות</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="תקציר WhatsApp רב-לקוחית">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>כל לקוח חדש לקח שבוע להקים. העסק לא צמח.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>מערכת אחת מטפלת בכל הלקוחות יחד. לקוח חדש מוכן בחצי שעה.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">שבוע → חצי שעה</span>
+            <p>פי 10 לקוחות בלי תוספת עלויות. העסק סוף-סוף צומח.</p>
+            <a href="/work#case-2" class="case-card-cta">פירוט מלא <span class="arrow">←</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Highlight 3 — Shopify automation -->
+      <article id="work-highlight-3" data-reveal="up-sm" class="case-card" tabindex="0" aria-expanded="false" aria-label="אוטומציית Shopify — תקציר">
+        <div class="case-card-visual bg-surface-container-low">
+          <svg class="svg-schematic" viewBox="0 0 400 200" fill="none" aria-hidden="true">
+            <g stroke="#bec6e0" stroke-opacity="0.32" stroke-width="0.8" fill="none">
+              <line class="anim-flow-stroke" x2="80"  y2="100" x1="140" y1="100"/>
+              <line class="anim-flow-stroke" x2="160" y2="100" x1="220" y1="100" style="animation-delay:.2s"/>
+              <line class="anim-flow-stroke" x2="240" y2="100" x1="300" y1="100" style="animation-delay:.4s"/>
+              <line class="anim-flow-stroke" x2="320" y2="100" x1="380" y1="100" style="animation-delay:.6s"/>
+            </g>
+            <g>
+              <circle class="anim-pulse-node" cx="350" cy="100" r="22" fill="#bec6e0" fill-opacity="0.18"/>
+              <circle cx="350" cy="100" r="5" fill="#bec6e0"/>
+              <circle class="anim-pulse-node" cx="270" cy="100" r="22" fill="#d6c4ac" fill-opacity="0.18" style="animation-delay:.4s"/>
+              <circle cx="270" cy="100" r="5" fill="#d6c4ac"/>
+              <circle class="anim-pulse-node" cx="190" cy="100" r="22" fill="#bec6e0" fill-opacity="0.18" style="animation-delay:.8s"/>
+              <circle cx="190" cy="100" r="5" fill="#bec6e0"/>
+              <circle class="anim-pulse-node" cx="110" cy="100" r="22" fill="#d6c4ac" fill-opacity="0.18" style="animation-delay:1.2s"/>
+              <circle cx="110" cy="100" r="5" fill="#d6c4ac"/>
+            </g>
+            <path d="M 80 100 L 90 95 L 90 105 Z" fill="#d6c4ac" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="case-card-front">
+          <div class="flex items-center justify-between">
+            <span class="font-label text-secondary/80 tracking-[0.3em] uppercase text-[10px]">03 · E-commerce</span>
+            <span class="material-symbols-outlined text-secondary text-[20px]">storefront</span>
+          </div>
+          <h3 class="case-card-title">החנות <span class="accent">עובדת לבד</span></h3>
+          <span class="case-card-meta">חנות eCommerce ישראלית</span>
+          <div class="case-tag-row" aria-hidden="true">
+            <span class="case-tag case-tag--front">סנכרון אוטומטי</span>
+            <span class="case-tag case-tag--front">אפס טעויות</span>
+          </div>
+        </div>
+        <div class="case-card-reveal" role="region" aria-label="תקציר Shopify">
+          <div class="reveal-block">
+            <span class="eyebrow">הבעיה</span>
+            <p>שעות ביום הולכות על העתקות בין מערכות.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">מה הכלי עושה</span>
+            <p>מלאי, מחירים, הזמנות ומשלוחים מסונכרנים אוטומטית.</p>
+          </div>
+          <div class="reveal-block">
+            <span class="eyebrow">למה זה חוסך זמן</span>
+            <span class="metric">שעות → דקות</span>
+            <p>אפס טעויות. יותר זמן לצמיחה.</p>
+            <a href="/work#case-3" class="case-card-cta">פירוט מלא <span class="arrow">←</span></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- See all CTA -->
+    <div data-reveal="up-sm" class="mt-16 md:mt-20 flex justify-center">
+      <a href="/work" class="btn-glass btn-glass-lg group">
+        <span>ראה את כל העבודות</span>
+        <span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:-translate-x-1">arrow_back</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" data-reveal="up-sm" aria-hidden="true">
+  <span class="line"></span>
+  <span class="glyph">&#10022;</span>
+  <span class="line"></span>
+</div>
+
 <!-- 6. Process -->
 <section id="process" class="py-32 md:py-40 bg-surface relative overflow-hidden">
   <div class="max-w-[1440px] mx-auto px-6 md:px-12">
@@ -656,7 +798,7 @@
 <section id="guarantee" class="py-32 md:py-48 bg-surface relative overflow-hidden">
   <div aria-hidden="true" class="absolute top-0 left-[8%] w-px h-full bg-outline-variant/[0.06]"></div>
   <div aria-hidden="true" class="absolute top-0 right-[8%] w-px h-full bg-outline-variant/[0.06]"></div>
-  <div aria-hidden="true" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-primary/[0.03] blur-[160px] ambient-blob" style="animation-duration:20s"></div>
+  <div aria-hidden="true" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-primary/[0.03] blur-[80px] ambient-blob" style="animation-duration:20s"></div>
 
   <div class="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
     <div class="mb-24 md:mb-40 max-w-4xl">
@@ -952,7 +1094,7 @@
 </main>
 
 <!-- App scripts -->
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 
 </body>
 </html>

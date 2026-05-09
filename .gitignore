@@ -26,3 +26,6 @@ npm-debug.log*
 # Research artifacts (one-off scripts + scraped data)
 research_*.py
 research_*.json
+
+# Local dev server
+web/_devserver.py

@@ -1,0 +1,5359 @@
+[
+ {
+  "page": "כל הדפים",
+  "group": "תפריט עליון, תפריט בנייד ותחתית הדף (משותף לכל הדפים)",
+  "rows": [
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "מה אני בונה",
+      "en": "What I build",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-001"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "עבודות",
+      "en": "Work",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-002"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "תהליך",
+      "en": "Process",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-003"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "שאלות נפוצות",
+      "en": "FAQ",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-004"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "שיחת היכרות",
+      "en": "Intro call",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-005"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "דוגמאות",
+      "en": "Examples",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-006"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אוטומציות שמתאימות לדרך שבה העסק שלך כבר עובד.",
+      "en": "Automation that fits the way your business already works.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-007"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "ניווט",
+      "en": "Navigation",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-008"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "קישורים",
+      "en": "Links",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-009"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "מדיניות פרטיות",
+      "en": "Privacy policy",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-010"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "יצירת קשר",
+      "en": "Contact",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-011"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "",
+    "parts": [
+     {
+      "he": "© 2026 Automation Club. כל הזכויות שמורות.",
+      "en": "© 2026 Automation Club. All rights reserved.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "S-012"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "מה אנחנו עושים",
+      "en": "What we do",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "S-013"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "שיחת ייעוץ חינם",
+      "en": "Free consultation",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "S-014"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אוטומציות מותאמות לעסקים שלא מתפשרים על פתרון גנרי.",
+      "en": "Custom automations for businesses that won't settle for a generic solution.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "S-015"
+   },
+   {
+    "shared": true,
+    "group": "",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "שיחת ייעוץ",
+      "en": "Consultation call",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "S-016"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אוטומציה לעסקים · מערכות · AI",
+      "en": "Business automation · Systems · AI",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-001"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "העבודה החוזרת",
+      "en": "The repetitive work",
+      "accent": false
+     },
+     {
+      "he": "בעסק שלך",
+      "en": "in your business",
+      "accent": false
+     },
+     {
+      "he": "יכולה לקרות לבד.",
+      "en": "can run on its own.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-002"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אני בונה אוטומציות שמחברות בין הכלים שכבר יש לך, מטפלות במשימות שחוזרות כל יום ומפנות לך זמן ללקוחות ולעבודה החשובה באמת.",
+      "en": "I build automations that connect the tools you already use, handle recurring tasks, and free up time for customers and the work that matters most.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-003"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "נדבר על העסק שלך",
+      "en": "Let's talk about your business",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-004"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "איך זה עובד",
+      "en": "How it works",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-005"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אפשר להתחיל בפרויקט חדש",
+      "en": "Open to new projects",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-006"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שיחת היכרות ללא עלות · 20–30 דקות",
+      "en": "Free intro call · 20–30 minutes",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-007"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מתחילים בתהליך אחד ברור",
+      "en": "Start with one clear process",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-008"
+   },
+   {
+    "shared": false,
+    "group": "העבודה החוזרת בעסק שלך יכולה לקרות לבד.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "המערכת והתיעוד נשארים אצלך",
+      "en": "Your system and documentation stay with you",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-009"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מוכר לך?",
+      "en": "Sound familiar?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-010"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "היום שלך מלא.",
+      "en": "Your day is full.",
+      "accent": false
+     },
+     {
+      "he": "אבל העבודה החשובה נדחית.",
+      "en": "The important work keeps waiting.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-011"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "ליד נכנס, פרטים עוברים בין מערכות, מישהו צריך לשלוח תזכורת. כל פעולה קטנה מושכת אותך בחזרה לתפעול.",
+      "en": "A lead comes in, details move between systems, someone has to send a reminder. Every small task pulls you back into operations.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-012"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "אותם פרטים,",
+      "en": "The same details,",
+      "accent": false
+     },
+     {
+      "he": "שוב ושוב.",
+      "en": "again and again.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-013"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "טופס, גיליון, מערכת לקוחות וחשבונית — אותם פרטים מוקלדים בכל מקום מחדש.",
+      "en": "Form, spreadsheet, CRM, invoice — the same details are entered again and again.",
+      "accent": false
+     },
+     {
+      "he": "הזמן מצטבר,",
+      "en": "The time adds up,",
+      "accent": false
+     },
+     {
+      "he": "וגם הסיכוי לטעות.",
+      "en": "and so does the chance of mistakes.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-014"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "פנייה נכנסה.",
+      "en": "A lead came in.",
+      "accent": false
+     },
+     {
+      "he": "מי חוזר אליה?",
+      "en": "Who follows up?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-015"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פנייה שמגיעה בערב מחכה לבוקר. אחר כך צריך לזכור לחזור, לעדכן סטטוס ולשלוח הצעה.",
+      "en": "An evening inquiry waits until morning. Then someone must remember to reply, update its status, and send a quote.",
+      "accent": false
+     },
+     {
+      "he": "כשאין תהליך קבוע,",
+      "en": "Without a clear process,",
+      "accent": false
+     },
+     {
+      "he": "קל לפספס את הצעד הבא.",
+      "en": "the next step is easy to miss.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-016"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הכל עובר דרכך.",
+      "en": "Everything runs through you.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-017"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תיאומים, תזכורות, חשבוניות ודוחות מחכים שתתפנה.",
+      "en": "Scheduling, reminders, invoices, and reports wait for you to find time.",
+      "accent": false
+     },
+     {
+      "he": "כשהיום עמוס או כשאינך זמין,",
+      "en": "When your day is full or you are away,",
+      "accent": false
+     },
+     {
+      "he": "העבודה פשוט נעצרת.",
+      "en": "the work stops.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-018"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עוד יום שמלא במשימות קטנות",
+      "en": "Another day of small tasks",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-019"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלח הצעת מחיר ידנית ללקוח",
+      "en": "Send a quote to a client, by hand",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 2,
+    "id": "H-020"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "העתק פרטים מהטופס לגיליון",
+      "en": "Copy form details into a spreadsheet",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 2,
+    "id": "H-021"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלח תזכורת פגישה ב-WhatsApp",
+      "en": "Send a meeting reminder on WhatsApp",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 2,
+    "id": "H-022"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עדכן סטטוס ליד ב-CRM",
+      "en": "Update a lead's status in the CRM",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 2,
+    "id": "H-023"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הכן דוח שבועי ל-Excel",
+      "en": "Prepare a weekly report in Excel",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-024"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תאם פגישה ידנית בין לוחות זמנים",
+      "en": "Coordinate a meeting across calendars, by hand",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-025"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלח חשבונית ידנית ללקוח",
+      "en": "Send an invoice to a client, by hand",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-026"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "בדוק אם הליד ענה — שוב",
+      "en": "Check if the lead replied — again",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-027"
+   },
+   {
+    "shared": false,
+    "group": "היום שלך מלא. אבל העבודה החשובה נדחית.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "את הזמן הזה",
+      "en": "You can give that time",
+      "accent": false
+     },
+     {
+      "he": "אפשר להחזיר לעסק,",
+      "en": "back to the business,",
+      "accent": false
+     },
+     {
+      "he": "תהליך אחד בכל פעם.",
+      "en": "one process at a time.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-028"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "איך אני עובד",
+      "en": "How I work",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-029"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "קודם מבינים את התהליך.",
+      "en": "Understand the process first.",
+      "accent": false
+     },
+     {
+      "he": "אחר כך בונים",
+      "en": "Then build",
+      "accent": true
+     },
+     {
+      "he": "את האוטומציה.",
+      "en": "the automation.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-030"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אני מתחיל מהמקום שבו העבודה נתקעת: מי מקבל את המידע, מה צריך לקרות אחר כך ומתי אדם צריך להיכנס לתמונה. משם בוחרים את הכלים שמתאימים לעסק שלך.",
+      "en": "I start where work gets stuck: who receives the information, what needs to happen next, and when a person needs to step in. Then I choose the tools that fit your business.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-031"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "גם כשאין חיבור מוכן",
+      "en": "Even when there is no ready-made connection",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-032"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אפשר לשלב כלים קיימים עם קוד מותאם כשצריך תהליך שהמוצר מהמדף לא יודע לבצע.",
+      "en": "I combine existing tools with custom code when an off-the-shelf product cannot handle the process.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-033"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "התהליך כולו, מקצה לקצה",
+      "en": "The whole process, end to end",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-034"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מהפנייה הראשונה ועד לעדכון הלקוח והצוות — המידע עובר בין המערכות בלי הקלדה חוזרת.",
+      "en": "From the first inquiry to updates for customers and staff, information moves between systems without duplicate entry.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-035"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "יש עם מי לדבר גם אחרי ההשקה",
+      "en": "Support after launch",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-036"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אחרי ההשקה אפשר להמשיך בתחזוקה ושיפורים, כדי שהתהליך יתאים גם כשהעסק משתנה.",
+      "en": "After launch, ongoing maintenance and improvements can keep the process in step with your business.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-037"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הסבר ברור בכל שלב",
+      "en": "Clear explanations at every step",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-038"
+   },
+   {
+    "shared": false,
+    "group": "קודם מבינים את התהליך. אחר כך בונים את האוטומציה.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אתה יודע מה נבנה, למה דווקא כך ומה הצוות שלך יצטרך לעשות. בלי להכיר את הכלים מבפנים.",
+      "en": "You know what is being built, why, and what your team will need to do — without having to learn the tools inside out.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-039"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "כך זה נראה בתהליכים יומיומיים.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "— מה אפשר להפוך לאוטומטי",
+      "en": "— What you can automate",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-040"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כך זה נראה",
+      "en": "Here is how it works",
+      "accent": false
+     },
+     {
+      "he": "בתהליכים יומיומיים.",
+      "en": "in everyday processes.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-041"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לא צריך להתחיל בשינוי גדול.",
+      "en": "You do not have to start with a major overhaul.",
+      "accent": false
+     },
+     {
+      "he": "הנה שישה תהליכים נפוצים שאפשר לבנות סביב הדרך שבה העסק שלך עובד.",
+      "en": "Here are six common processes we can build around the way your business works.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-042"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כל פנייה מגיעה",
+      "en": "Every inquiry lands",
+      "accent": false
+     },
+     {
+      "he": "למקום אחד.",
+      "en": "in one place.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-043"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פניות מהטופס, מוואטסאפ ומערוצים נוספים נכנסות למערכת הלקוחות עם המקור, הפרטים והמשימה הבאה.",
+      "en": "Inquiries from your form, WhatsApp, and other channels reach your CRM with their source, details, and next step.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-044"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "פגישות בלי מרדף אחרי תיאומים",
+      "en": "Scheduling without the back-and-forth",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-045"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הלקוח בוחר מועד פנוי, מקבל אישור ותזכורת. הצוות רואה את הפגישה ביומן.",
+      "en": "Customers choose an available time and get a confirmation and reminder. Your team sees the booking on its calendar.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-046"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "חשבוניות ותזכורות תשלום",
+      "en": "Invoices and payment reminders",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-047"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לאחר שלב שהגדרת, החשבונית נשלחת והמערכת מזכירה על תשלום שלא התקבל.",
+      "en": "After the step you define, an invoice goes out and the system follows up on unpaid balances.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-048"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "דוח שמגיע אליך, לא להפך",
+      "en": "A report delivered to you",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-049"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מכירות, פניות ומשימות פתוחות מתרכזות בדוח קבוע, בלי לאסוף נתונים מכל מערכת בנפרד.",
+      "en": "Sales, inquiries, and open tasks appear in a regular report, without gathering data from each system separately.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-050"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מההזמנה ועד לעדכון הלקוח",
+      "en": "From order to customer update",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-051"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הזמנה",
+      "en": "Order",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-052"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תווית",
+      "en": "Label",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-053"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "ביקורת",
+      "en": "Review",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-054"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "עוזר AI",
+      "en": "An AI assistant",
+      "accent": false
+     },
+     {
+      "he": "עם גבולות ברורים.",
+      "en": "with clear boundaries.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-055"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה בתהליכים יומיומיים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אפשר לתת לעוזר לענות על שאלות חוזרות, לסכם שיחות ולמיין פניות — ולהעביר לאדם את מה שדורש החלטה.",
+      "en": "An assistant can answer common questions, summarize conversations, and sort inquiries, while passing decisions to a person.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-056"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "כך זה נראה במערכת שעובדת.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "— מבט על העבודה",
+      "en": "— A look at the work",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-057"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כך זה נראה",
+      "en": "Here is how it works",
+      "accent": false
+     },
+     {
+      "he": "במערכת שעובדת.",
+      "en": "in a working system.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-058"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלושה סוגי פתרונות.",
+      "en": "Three types of solutions.",
+      "accent": false
+     },
+     {
+      "he": "מכל אחד אפשר ללמוד איך להפוך עבודה ידנית לתהליך ברור.",
+      "en": "Each shows how manual work can become a clear process.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-059"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מענה ראשוני",
+      "en": "First response",
+      "accent": false
+     },
+     {
+      "he": "לפניות נכנסות",
+      "en": "to new inquiries",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-060"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · יצרנית מוצרי אריזה",
+      "en": "Example · packaging manufacturer",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-061"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מענה ראשוני מהיר",
+      "en": "Fast first response",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-062"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 3,
+    "id": "H-063"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פניות נכנסות מכמה ערוצים. מענה ידני לכל אחת מהן מעכב את ההמשך.",
+      "en": "Inquiries arrive from several channels. Answering each one manually slows down the next step.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-064"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 3,
+    "id": "H-065"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "המערכת עונה על שאלות נפוצות ומעבירה פניות שדורשות שיחה אישית.",
+      "en": "The system answers common questions and passes inquiries that need a personal conversation to a person.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-066"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 3,
+    "id": "H-067"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מענה גם מחוץ לשעות העבודה",
+      "en": "Responses outside business hours",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-068"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אפשר להיכנס לשיחה כשהלקוח צריך אדם, במקום לטפל ידנית בכל פנייה.",
+      "en": "You can step in when someone needs a person, instead of handling every inquiry manually.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-069"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "פירוט מלא",
+      "en": "Full details",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "repeats": 3,
+    "id": "H-070"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הקמת לקוחות",
+      "en": "WhatsApp client",
+      "accent": false
+     },
+     {
+      "he": "בוואטסאפ",
+      "en": "onboarding",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-071"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · שירות לעסקים",
+      "en": "Example · business service",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-072"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות עבודה בכל חיבור",
+      "en": "Less work per connection",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-073"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תהליך הקמה קבוע",
+      "en": "A repeatable setup process",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-074"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הקמה ידנית לכל לקוח חדש חזרה על אותן פעולות והאטה את השירות.",
+      "en": "Manual setup repeated the same steps for every new client and slowed down the service.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-075"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פורטל אחד מרכז הרשמה, חיבור וניהול של לקוחות השירות.",
+      "en": "One portal brings together signup, connection, and account management.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-076"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלבי הקמה בשירות עצמי",
+      "en": "Self-service setup steps",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-077"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לקוח חדש יכול לבצע את שלבי החיבור בעצמו, גם כשבעל השירות לא זמין.",
+      "en": "A new customer can complete the connection steps independently, even when the provider is unavailable.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-078"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "החנות",
+      "en": "The store",
+      "accent": false
+     },
+     {
+      "he": "מסונכרנת",
+      "en": "stays in sync",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-079"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · חנות אונליין",
+      "en": "Example · online store",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-080"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מידע עובר בין מערכות",
+      "en": "Information moves between systems",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-081"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות הקלדה ידנית",
+      "en": "Less manual entry",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-082"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מלאי, מחירים והזמנות דורשים עדכון בכמה מערכות שונות.",
+      "en": "Inventory, prices, and orders need updates across several systems.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-083"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "המערכת מעבירה עדכונים בין החנות, ניהול המלאי והשילוח לפי הכללים שהוגדרו.",
+      "en": "The system passes updates between the store, inventory management, and shipping according to the defined rules.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-084"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עדכון אחד במקום כמה",
+      "en": "One update instead of several",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-085"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות העתקות ידניות ויותר זמן לטפל במקרים שדורשים תשומת לב.",
+      "en": "Less manual copying and more time for cases that need attention.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-086"
+   },
+   {
+    "shared": false,
+    "group": "כך זה נראה במערכת שעובדת.",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "לכל הדוגמאות",
+      "en": "See all examples",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-087"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "איך זה עובד",
+      "en": "How it works",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-088"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מתחילים בתהליך אחד.",
+      "en": "Start with one process.",
+      "accent": false
+     },
+     {
+      "he": "בודקים שהוא עובד.",
+      "en": "Make sure it works.",
+      "accent": true
+     },
+     {
+      "he": "ממשיכים משם.",
+      "en": "Build from there.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-089"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כבר בשיחה הראשונה נבין מה גוזל זמן, מה צריך לקרות במקום ומה תהיה דרך סבירה למדוד שיפור.",
+      "en": "In the first call, we identify what takes time, what should happen instead, and how to measure improvement.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-090"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "שיחת היכרות",
+      "en": "Intro call",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-091"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "בשיחה של 20–30 דקות תראה לי איפה העבודה נתקעת. נבדוק אם אוטומציה היא באמת הפתרון הנכון.",
+      "en": "In a 20–30 minute call, show me where the work gets stuck. We will see whether automation is the right solution.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-092"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הצעה כתובה",
+      "en": "Written proposal",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-093"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תקבל תיאור של התהליך, מה נבנה, מה נדרש ממך, לוח זמנים ומחיר לפני שמתחילים.",
+      "en": "You will receive a description of the process, what will be built, what I need from you, a timeline, and a price before work begins.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-094"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "שלב ראשון ממוקד",
+      "en": "A focused first step",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-095"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "בוחרים פעולה חוזרת אחת, בונים אותה ובודקים אותה בעבודה אמיתית לפני שמרחיבים.",
+      "en": "We choose one recurring task, build the solution, and test it in real work before expanding.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-096"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "בנייה והטמעה",
+      "en": "Build and handover",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-097"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אחרי בדיקה ותיקונים, מחברים את התהליך לעבודה היומיומית ומראים לצוות איך להשתמש בו.",
+      "en": "After testing and adjustments, I connect the process to daily work and show your team how to use it.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-098"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "תחזוקה ושיפור",
+      "en": "Maintenance and improvements",
+      "accent": false
+     },
+     {
+      "he": "(לא חובה)",
+      "en": "(optional)",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-099"
+   },
+   {
+    "shared": false,
+    "group": "מתחילים בתהליך אחד. בודקים שהוא עובד. ממשיכים משם.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אם צריך, ממשיכים לליווי חודשי: טיפול בתקלות, התאמות ושיפורים ככל שהעסק משתנה.",
+      "en": "If needed, monthly support covers issues, adjustments, and improvements as the business changes.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-100"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "תהליך ברור. שליטה אצלך.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה חשוב לי שתדע",
+      "en": "What you can expect",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-101"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "תהליך ברור.",
+      "en": "A clear process.",
+      "accent": false
+     },
+     {
+      "he": "שליטה אצלך.",
+      "en": "You stay in control.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-102"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לפני שמתחילים, מסכמים מה יקרה בשלב הראשון ומה תקבל בסופו. כך אפשר להחליט על ההמשך על בסיס משהו שעובד.",
+      "en": "Before work begins, we agree on what happens in the first step and what you receive at the end. That gives you something real to evaluate before expanding.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-103"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מתחילים קטן",
+      "en": "Start small",
+      "accent": false
+     },
+     {
+      "he": "ורואים שזה עובד.",
+      "en": "and see it work.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-104"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "בוחרים תהליך אחד עם בעיה ברורה. בונים, בודקים ומתקנים לפני שמחברים אליו עוד חלקים.",
+      "en": "We choose one process with a clear problem, build it, test it, and adjust it before adding more parts.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-105"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלב ראשון מוגדר מראש",
+      "en": "A clearly scoped first step",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-106"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הקוד והתיעוד",
+      "en": "The code and documentation",
+      "accent": false
+     },
+     {
+      "he": "נשארים אצלך.",
+      "en": "stay with you.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-107"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "בסיום העבודה מקבלים את מה שנבנה ואת התיעוד הדרוש להפעלה ולהמשך פיתוח.",
+      "en": "At handover, you receive what was built and the documentation needed to run and extend it.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-108"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אפשר להמשיך גם עם ספק אחר",
+      "en": "You can work with another provider",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-109"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מחליטים מראש",
+      "en": "Agree in advance",
+      "accent": false
+     },
+     {
+      "he": "איך נבדוק שיפור.",
+      "en": "how to measure progress.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-110"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "זמן טיפול, פעולות ידניות או זמן תגובה — בוחרים מדדים שמתאימים לתהליך ומסתכלים עליהם אחרי ההטמעה.",
+      "en": "Handling time, manual steps, or response time — we choose measures that fit the process and review them after launch.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-111"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מודדים את מה שחשוב לעסק",
+      "en": "Measure what matters to the business",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-112"
+   },
+   {
+    "shared": false,
+    "group": "תהליך ברור. שליטה אצלך.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "— בלי הבטחות שאי אפשר לבדוק.",
+      "en": "— No promises you cannot check.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-113"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שאלות נפוצות",
+      "en": "FAQ",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-114"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כמה דברים שכדאי לדעת",
+      "en": "A few things to know",
+      "accent": false
+     },
+     {
+      "he": "לפני שמתחילים.",
+      "en": "before we start.",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-115"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כמה עולה לבנות אוטומציה?",
+      "en": "How much does an automation cost?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-116"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שיחת ההיכרות ללא עלות. מחיר הפרויקט תלוי בתהליך, במספר המערכות ובמורכבות החיבור. אחרי שנבין את הצורך תקבל הצעה כתובה עם תכולה ומחיר.",
+      "en": "The intro call is free. Project cost depends on the process, the systems involved, and the complexity of the connection. Once we understand the need, you will receive a written scope and price.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-117"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "צריך להבין בטכנולוגיה כדי לעבוד איתך?",
+      "en": "Do I need technical knowledge to work with you?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-118"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לא. אני מסביר מה המערכת תעשה בעבודה היומיומית, איזה מידע היא צריכה ומתי הצוות שלך נכנס לתמונה.",
+      "en": "No. I explain what the system will do in daily work, what information it needs, and when your team steps in.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-119"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כבר ניסינו אוטומציה והיא לא החזיקה. מה יהיה שונה?",
+      "en": "We tried automation before and it did not last. What will be different?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-120"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "נבדוק קודם איפה התהליך הקודם נתקע. השלב הראשון ממוקד, כולל בדיקה בעבודה אמיתית, ואפשר להמשיך לתחזוקה אחרי ההשקה.",
+      "en": "First, we look at where the earlier process failed. The first step is focused and tested in real work, with ongoing support available after launch.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-121"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מה קורה אם נרצה להמשיך בלעדיך?",
+      "en": "What if we want to continue without you?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-122"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הקוד והתיעוד של הפרויקט נמסרים לך. ספק אחר יוכל לעיין בהם ולהמשיך את העבודה, בכפוף לגישות ולשירותים שבהם המערכת משתמשת.",
+      "en": "The project code and documentation are handed over to you. Another provider can review them and continue the work, subject to access and the services the system uses.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-123"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "העסק שלי קטן. זה מתאים?",
+      "en": "Is this right for a small business?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-124"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כן, אם יש פעולה חוזרת שלוקחת זמן או גורמת לפספוסים. לא חייבים מערכת גדולה: אפשר להתחיל מהתהליך שכדאי לפתור ראשון.",
+      "en": "Yes, if a recurring task takes time or leads to missed steps. You do not need a large system; we can start with the process most worth fixing.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-125"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מתי רואים משהו עובד?",
+      "en": "When will we see something working?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-126"
+   },
+   {
+    "shared": false,
+    "group": "כמה דברים שכדאי לדעת לפני שמתחילים.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "זה תלוי במורכבות ובגישות למערכות. בהצעה אכתוב מה כולל השלב הראשון ומתי אפשר לבדוק אותו בעבודה אמיתית.",
+      "en": "It depends on complexity and access to the systems. The proposal will spell out the first step and when it can be tested in real work.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-127"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "מה גוזל לך זמן בכל שבוע?",
+  "rows": [
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מתחילים כאן",
+      "en": "Start here",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-128"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מה גוזל לך זמן",
+      "en": "What takes your time",
+      "accent": false
+     },
+     {
+      "he": "בכל שבוע?",
+      "en": "every week?",
+      "accent": true
+     }
+    ],
+    "page": "index.html",
+    "id": "H-129"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "ספר לי על פעולה שחוזרת אצלך בעסק. בשיחת היכרות קצרה נבדוק אם אפשר להפוך אותה לתהליך שעובד גם בלעדיך.",
+      "en": "Tell me about a task that keeps coming up in your business. In a short intro call, we will see whether it can become a process that runs without you.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-130"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה נברר בשיחה",
+      "en": "What we will cover",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-131"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "איפה בדיוק התהליך נתקע היום",
+      "en": "Where the process gets stuck today",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-132"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לשפר ומה יידרש לכך",
+      "en": "What can improve and what it will take",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-133"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "האם נכון להתחיל בפרויקט יחד",
+      "en": "Whether a project together makes sense",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-134"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שם מלא",
+      "en": "Full name",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-135"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "טלפון",
+      "en": "Phone",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-136"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "איך נוח לך שאחזור אליך?",
+      "en": "How should I get back to you?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-137"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שיחת טלפון",
+      "en": "Phone call",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-138"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה שנוח",
+      "en": "Either works",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-139"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "איזו פעולה חוזרת תרצה לפתור?",
+      "en": "Which recurring task would you like to fix?",
+      "accent": false
+     },
+     {
+      "he": "(לא חובה)",
+      "en": "(optional)",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-140"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "שלח פרטים בוואטסאפ",
+      "en": "Send details on WhatsApp",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-141"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "רוצה לכתוב ישירות? פתח וואטסאפ",
+      "en": "Prefer to message directly? Open WhatsApp",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-142"
+   },
+   {
+    "shared": false,
+    "group": "מה גוזל לך זמן בכל שבוע?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הטופס יפתח הודעת וואטסאפ עם הפרטים שהזנת. ההודעה תישלח רק אחרי שתאשר אותה.",
+      "en": "The form opens a WhatsApp message with the details you entered. It is sent only after you confirm it.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "id": "H-143"
+   }
+  ]
+ },
+ {
+  "page": "דף הבית",
+  "group": "מאחורי הקלעים: כותרת הלשונית, תיאור לגוגל ושדות בטופס",
+  "rows": [
+   {
+    "kind": "כותרת הלשונית בדפדפן",
+    "parts": [
+     {
+      "he": "אוטומציה לעסקים | Automation Club",
+      "en": "Business Automation | Automation Club",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "attr": true,
+    "id": "H-144"
+   },
+   {
+    "kind": "התיאור שמופיע בגוגל",
+    "parts": [
+     {
+      "he": "אוטומציה לעסקים קטנים ובינוניים — Automation Club. חיבור מערכות, טיפול במשימות חוזרות ופתרונות מותאמים. שיחת היכרות ללא עלות.",
+      "en": "Business automation for small and medium businesses — Automation Club. Connected systems, recurring tasks, and tailored solutions. Free intro call.",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "attr": true,
+    "id": "H-145"
+   },
+   {
+    "kind": "טקסט אפור בתוך שדה בטופס",
+    "parts": [
+     {
+      "he": "איך קוראים לך?",
+      "en": "What's your name?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "attr": true,
+    "id": "H-146"
+   },
+   {
+    "kind": "טקסט אפור בתוך שדה בטופס",
+    "parts": [
+     {
+      "he": "איזו משימה חוזרת שוב ושוב בעסק שלך?",
+      "en": "Which task keeps coming up in your business?",
+      "accent": false
+     }
+    ],
+    "page": "index.html",
+    "attr": true,
+    "id": "H-147"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "כך פותרים עבודה שחוזרת.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "כך פותרים עבודה שחוזרת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "— דוגמאות לפתרונות",
+      "en": "— Solution examples",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-001"
+   },
+   {
+    "shared": false,
+    "group": "כך פותרים עבודה שחוזרת.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "כך פותרים",
+      "en": "Ways to solve",
+      "accent": false
+     },
+     {
+      "he": "עבודה שחוזרת.",
+      "en": "repetitive work.",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-002"
+   },
+   {
+    "shared": false,
+    "group": "כך פותרים עבודה שחוזרת.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כל כרטיס מציג בעיה מוכרת, תהליך שאפשר לבנות ומה ישתנה בעבודה היומיומית.",
+      "en": "Each card shows a familiar bottleneck, a process that can be built, and how day-to-day work could change.",
+      "accent": false
+     },
+     {
+      "he": "בסוף העמוד יש גם קישור לפורטל לקוחות שנבנה.",
+      "en": "At the end of the page, you can also see a customer portal that was built.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-003"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "01 · פורטל",
+      "en": "01 · Portal",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-004"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "חיבור וואטסאפ",
+      "en": "WhatsApp connection",
+      "accent": false
+     },
+     {
+      "he": "בשירות עצמי.",
+      "en": "through self-service.",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-005"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שירות WhatsApp API · פורטל לקוחות",
+      "en": "WhatsApp API service · customer portal",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-006"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שירות עצמי",
+      "en": "Self-service",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-007"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תיעוד API מלא",
+      "en": "Full API docs",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-008"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "לצפייה בפורטל ↗",
+      "en": "View the portal ↗",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-009"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה היה צריך לפתור",
+      "en": "The problem to solve",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-010"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "חיבור מספר חדש דרש מעורבות של בעל השירות בכל שלב: פתיחת החשבון, סריקה ובדיקת החיבור.",
+      "en": "Connecting a new number required the provider at every step: opening the account, scanning, and checking the connection.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-011"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה נבנה",
+      "en": "What was built",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-012"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הלקוח נרשם לפורטל, סורק קוד QR ומקבל גישה למפתח API ולתיעוד. סטטוס החיבור מופיע במקום אחד.",
+      "en": "Customers sign up in the portal, scan a QR code, and access an API key and documentation. Connection status appears in one place.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-013"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה השתנה בתהליך",
+      "en": "What changed in the process",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-014"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הרשמה → סריקה → API",
+      "en": "Sign up → scan → API",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-015"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: חיבור וואטסאפ בשירות עצמי.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הלקוח מבצע את שלבי החיבור בפורטל. בעל השירות מטפל במקרים שדורשים התערבות, במקום להקים כל חשבון ידנית.",
+      "en": "Customers complete the connection steps in the portal. The provider handles cases that need help instead of setting up every account manually.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-016"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מענה ראשוני",
+      "en": "First response",
+      "accent": false
+     },
+     {
+      "he": "לפניות נכנסות",
+      "en": "to new inquiries",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-017"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · יצרנית מוצרי אריזה",
+      "en": "Example · packaging manufacturer",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-018"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מענה ראשוני מהיר",
+      "en": "Fast first response",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-019"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-020"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פניות מגיעות מכמה ערוצים. אם כל תשובה מחכה שבעל העסק יתפנה, גם לקוח מוכן לקנייה נשאר בלי מענה.",
+      "en": "Inquiries arrive through several channels. If each reply waits for the owner, even a buyer who is ready to act waits unanswered.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-021"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-022"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מענה לשאלות נפוצות, איסוף פרטים ראשוניים והעברת שיחות שדורשות אדם ישירות לבעל העסק.",
+      "en": "Answers to common questions, collection of initial details, and handoff of conversations that need a person.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-023"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-024"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מענה גם מחוץ לשעות העבודה",
+      "en": "Responses outside business hours",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-025"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: מענה ראשוני לפניות נכנסות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "בעל העסק נכנס לשיחה כשהיא דורשת טיפול אישי, במקום להתחיל כל פנייה מאפס.",
+      "en": "The owner steps in when personal attention is needed instead of starting every inquiry from scratch.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-026"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הקמת לקוחות",
+      "en": "WhatsApp client",
+      "accent": false
+     },
+     {
+      "he": "בוואטסאפ",
+      "en": "onboarding",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-027"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · שירות לעסקים",
+      "en": "Example · business service",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-028"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות עבודה בכל חיבור",
+      "en": "Less work per connection",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-029"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תהליך הקמה קבוע",
+      "en": "A repeatable setup process",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-030"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-031"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כל לקוח חדש דורש את אותם שלבי ההקמה, ההרשאות והבדיקות. כשהכל נעשה ביד, מספר הלקוחות שאפשר לשרת מוגבל בזמן של הצוות.",
+      "en": "Every new client needs the same setup, permissions, and checks. When it is all manual, team time limits how many clients can be served.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-032"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-033"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פורטל שמרכז הרשמה, חיבור חשבון, בדיקת סטטוס והנחיות ללקוח במקום אחד.",
+      "en": "A portal that brings signup, account connection, status checks, and customer guidance into one place.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-034"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-035"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שלבי הקמה בשירות עצמי",
+      "en": "Self-service setup steps",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-036"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הקמת לקוחות בוואטסאפ",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הלקוח מבצע חלק מההקמה בעצמו, והצוות מתערב רק במקרה חריג.",
+      "en": "Customers complete part of the setup themselves, while the team steps in for exceptions.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-037"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: החנות מסונכרנת",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "מוצרים",
+      "en": "Products",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-038"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "מלאי",
+      "en": "Inventory",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-039"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "תמחור",
+      "en": "Pricing",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-040"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "משלוח",
+      "en": "Shipping",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-041"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "החנות",
+      "en": "The store",
+      "accent": false
+     },
+     {
+      "he": "מסונכרנת",
+      "en": "stays in sync",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-042"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · חנות אונליין",
+      "en": "Example · online store",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-043"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מידע עובר בין מערכות",
+      "en": "Information moves between systems",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-044"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות הקלדה ידנית",
+      "en": "Less manual entry",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-045"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-046"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מוצרים, מלאי, הזמנות ומשלוחים נמצאים בכמה מערכות. כל שינוי ידני צריך לעבור ביניהן, ולעיתים פרט אחד נשאר מאחור.",
+      "en": "Products, inventory, orders, and shipping live in different systems. Each manual change has to move between them, and sometimes a detail gets left behind.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-047"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-048"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "חיבור שמעביר עדכונים בין החנות, מערכת המלאי והשילוח לפי כללים ברורים, עם התראה כשנדרש טיפול ידני.",
+      "en": "A connection that passes updates between the store, inventory, and shipping according to clear rules, with alerts when manual attention is needed.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-049"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-050"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עדכון אחד במקום כמה",
+      "en": "One update instead of several",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-051"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: החנות מסונכרנת",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הצוות מקדיש פחות זמן להעתקה בין מערכות ויותר זמן להזמנות חריגות וללקוחות.",
+      "en": "The team spends less time copying between systems and more time on unusual orders and customers.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-052"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "קמפיינים ודוחות",
+      "en": "Campaigns and reports",
+      "accent": false
+     },
+     {
+      "he": "ממקום אחד",
+      "en": "in one place",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-053"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · סוכנות שיווק",
+      "en": "Example · marketing agency",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-054"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות מעבר בין חשבונות",
+      "en": "Less switching between accounts",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-055"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תמונה עדכנית במקום אחד",
+      "en": "A current view in one place",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-056"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-057"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כשכל חשבון מנוהל בנפרד, בדיקת ביצועים והכנת דוחות דורשות מעבר חוזר בין ממשקים.",
+      "en": "When each account is managed separately, checking performance and preparing reports means switching between interfaces again and again.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-058"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-059"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מסך שמרכז נתונים ופעולות חוזרות עבור החשבונות שהסוכנות מנהלת, עם הרשאות ובדיקות לפני שינוי.",
+      "en": "A screen that brings together data and recurring tasks for the agency’s accounts, with permissions and checks before changes are made.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-060"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-061"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כמה חשבונות → תצוגה אחת",
+      "en": "Many accounts → one view",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-062"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: קמפיינים ודוחות ממקום אחד",
+    "kind": "",
+    "parts": [
+     {
+      "he": "קל יותר לראות מה דורש טיפול, לבצע פעולות חוזרות ולהפיק דוח בלי לאסוף ידנית נתונים מכל חשבון.",
+      "en": "It becomes easier to see what needs attention, handle repeated actions, and prepare a report without manually gathering data from each account.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-063"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: עוזר AI לשיחות חוזרות",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "עוזר AI",
+      "en": "An AI assistant",
+      "accent": false
+     },
+     {
+      "he": "לשיחות חוזרות",
+      "en": "for recurring conversations",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-064"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · שירות ומכירות",
+      "en": "Example · service and sales",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-065"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מענה לפי הקשר",
+      "en": "Context-aware replies",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-066"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "העברה לאדם כשצריך",
+      "en": "Human handoff when needed",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-067"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-068"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אותן שאלות חוזרות בערוצים שונים. כשמישהו צריך לבדוק כל שיחה מתחילתה, קשה לענות בעקביות ובזמן.",
+      "en": "The same questions recur across channels. When someone must review every conversation from the start, timely and consistent replies are hard.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-069"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-070"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עוזר שמקבל הקשר מהשיחה, עונה על נושאים שהוגדרו מראש ומעביר לאדם פניות מחוץ לגבולות שלו.",
+      "en": "An assistant that reads the conversation context, replies within defined topics, and hands off anything outside its limits.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-071"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-072"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שאלות חוזרות מקבלות מענה",
+      "en": "Recurring questions get answered",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-073"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: עוזר AI לשיחות חוזרות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הצוות יכול להתמקד בשיחות שדורשות שיקול דעת, עם היסטוריית השיחה מול העיניים.",
+      "en": "The team can focus on conversations requiring judgment, with the conversation history in view.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-074"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "המתנה",
+      "en": "Waitlist",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-075"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "07 · קליניקה",
+      "en": "07 · Clinic",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-076"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "תור שהתפנה",
+      "en": "An open slot",
+      "accent": false
+     },
+     {
+      "he": "מוצע לבא בתור",
+      "en": "reaches the next person",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-077"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · קליניקה",
+      "en": "Example · clinic",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-078"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תזכורות לפני התור",
+      "en": "Appointment reminders",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-079"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "רשימת המתנה שמתעדכנת",
+      "en": "An updated waitlist",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-080"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-081"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כשמטופל מבטל ברגע האחרון, הצוות צריך להתקשר לממתינים אחד אחד. בינתיים התור נשאר ריק.",
+      "en": "When a patient cancels at short notice, staff call people on the waitlist one by one. Meanwhile, the appointment stays empty.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-082"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-083"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תזכורות לפני התור, קישור ביטול ברור והצעה אוטומטית לממתינים כשמתפנה מקום.",
+      "en": "Reminders before appointments, a clear cancellation link, and an automatic offer to people on the waitlist when a slot opens.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-084"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-085"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות שיחות תיאום ידניות",
+      "en": "Fewer manual scheduling calls",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-086"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: תור שהתפנה מוצע לבא בתור",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הצוות רואה מי אישר, מי ביטל ולמי הוצע התור שהתפנה.",
+      "en": "Staff see who confirmed, who canceled, and who has been offered the open slot.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-087"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "3 ימים",
+      "en": "3 days",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-088"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "7 ימים",
+      "en": "7 days",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-089"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "14 ימים",
+      "en": "14 days",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-090"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "לקוח",
+      "en": "Client",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-091"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "07 · מעקב",
+      "en": "07 · Follow-up",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-092"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "הצעות לא נשכחות.",
+      "en": "Quotes get followed up.",
+      "accent": false
+     },
+     {
+      "he": "תשלומים במעקב.",
+      "en": "Payments get tracked.",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-093"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · עסק שירות",
+      "en": "Example · service business",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-094"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תזכורות להצעות פתוחות",
+      "en": "Reminders for open quotes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "repeats": 2,
+    "id": "W-095"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מעקב אחרי חשבוניות",
+      "en": "Invoice follow-up",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-096"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-097"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הצעת מחיר נשלחת, אבל אין זמן לבדוק אם התקבלה תשובה. גם חשבונית שלא שולמה מחכה שמישהו ייזכר בה.",
+      "en": "A quote is sent, but no one has time to check for a response. An unpaid invoice also waits for someone to remember it.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-098"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-099"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מעקב אחרי הצעות פתוחות ותזכורות בתזמון שקובעים מראש, לצד רשימה ברורה של חשבוניות שדורשות טיפול.",
+      "en": "Follow-up on open quotes and reminders at agreed times, along with a clear list of invoices that need attention.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-100"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-101"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: הצעות לא נשכחות. תשלומים במעקב.",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הצוות יודע למי צריך לחזור ומתי, בלי לנהל את כל המעקב מהזיכרון.",
+      "en": "The team knows whom to follow up with and when, without managing everything from memory.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-102"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "שיחה",
+      "en": "Call",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-103"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "09 · מכירות",
+      "en": "09 · Sales",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-104"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "סיכום שיחה",
+      "en": "Call summary",
+      "accent": false
+     },
+     {
+      "he": "ישירות בכרטיס הלקוח",
+      "en": "straight into the CRM",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-105"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · צוות מכירות",
+      "en": "Example · sales team",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-106"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות סיכומים ידניים",
+      "en": "Less manual note-taking",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "repeats": 2,
+    "id": "W-107"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "היסטוריית שיחות מסודרת",
+      "en": "An organized call history",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-108"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-109"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אחרי כל שיחה צריך לזכור מה סוכם, מה הובטח ומה הצעד הבא — ואז להקליד הכול למערכת הלקוחות.",
+      "en": "After each call, someone has to remember what was agreed, what was promised, and the next step, then enter it all in the CRM.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-110"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-111"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "טיוטת סיכום שנוצרת אחרי השיחה, נבדקת בידי איש הצוות ומתעדכנת בכרטיס הלקוח.",
+      "en": "A draft summary generated after the call, reviewed by a team member, and then saved to the customer record.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-112"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-113"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: סיכום שיחה ישירות בכרטיס הלקוח",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות הקלדה אחרי שיחות, ויותר הקשר זמין לכל מי שממשיך את הטיפול.",
+      "en": "Less typing after calls and more context for the next person handling the customer.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-114"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+  "rows": [
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "תווית באיור",
+    "parts": [
+     {
+      "he": "מערכת חשבונאות",
+      "en": "Accounting system",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-115"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "10 · נתונים",
+      "en": "10 · Data",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-116"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "פרטי חשבוניות",
+      "en": "Invoice details",
+      "accent": false
+     },
+     {
+      "he": "מתוך קובצי PDF",
+      "en": "from PDF files",
+      "accent": true
+     }
+    ],
+    "page": "work.html",
+    "id": "W-117"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוגמה · הנהלת חשבונות",
+      "en": "Example · bookkeeping",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-118"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "חילוץ פרטים אוטומטי",
+      "en": "Automatic data extraction",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-119"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "פחות הקלדה ידנית",
+      "en": "Less manual entry",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-120"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "הבעיה",
+      "en": "The problem",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-121"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "חשבוניות מגיעות כקובצי PDF בפורמטים שונים. מישהו צריך למצוא את הסכום, התאריך והספק ולהקליד אותם מחדש.",
+      "en": "Invoices arrive as PDFs in different formats. Someone has to find the amount, date, and vendor, then retype them.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-122"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה אפשר לבנות",
+      "en": "What we can build",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-123"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מערכת שקוראת את הקבצים, מחלצת את השדות הדרושים ומציגה לבדיקה פרטים לא ברורים לפני העברה למערכת החשבונאות.",
+      "en": "A system that reads the files, extracts the required fields, and flags uncertain details for review before sending them to the accounting system.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-124"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מה משתנה",
+      "en": "What changes",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-125"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "קובץ PDF → פרטים לבדיקה",
+      "en": "PDF → details ready for review",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-126"
+   },
+   {
+    "shared": false,
+    "group": "פרויקט: פרטי חשבוניות מתוך קובצי PDF",
+    "kind": "",
+    "parts": [
+     {
+      "he": "במקום להקליד כל חשבונית מחדש, הצוות בודק חריגים ומאשר את הנתונים.",
+      "en": "Instead of retyping every invoice, the team reviews exceptions and confirms the data.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-127"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "איזה תהליך מכביד אצלך על הצוות?",
+  "rows": [
+   {
+    "shared": false,
+    "group": "איזה תהליך מכביד אצלך על הצוות?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "— התור שלך",
+      "en": "— Your turn",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-128"
+   },
+   {
+    "shared": false,
+    "group": "איזה תהליך מכביד אצלך על הצוות?",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "איזה תהליך",
+      "en": "Which process",
+      "accent": false
+     },
+     {
+      "he": "מכביד אצלך",
+      "en": "is slowing",
+      "accent": true
+     },
+     {
+      "he": "על הצוות?",
+      "en": "your team down?",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-129"
+   },
+   {
+    "shared": false,
+    "group": "איזה תהליך מכביד אצלך על הצוות?",
+    "kind": "",
+    "parts": [
+     {
+      "he": "ספר לי מה חוזר שוב ושוב בעסק שלך. בשיחה קצרה נבדוק איזה חלק כדאי לפתור ראשון.",
+      "en": "Tell me what keeps repeating in your business. In a short call, we will see which part to tackle first.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-130"
+   },
+   {
+    "shared": false,
+    "group": "איזה תהליך מכביד אצלך על הצוות?",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "נדבר על העסק שלך",
+      "en": "Let's talk about your business",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-131"
+   },
+   {
+    "shared": false,
+    "group": "איזה תהליך מכביד אצלך על הצוות?",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "חזרה לעמוד הבית",
+      "en": "Back to the homepage",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "id": "W-132"
+   }
+  ]
+ },
+ {
+  "page": "תיק עבודות",
+  "group": "מאחורי הקלעים: כותרת הלשונית, תיאור לגוגל ושדות בטופס",
+  "rows": [
+   {
+    "kind": "כותרת הלשונית בדפדפן",
+    "parts": [
+     {
+      "he": "דוגמאות לאוטומציה | Automation Club",
+      "en": "Automation Examples | Automation Club",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "attr": true,
+    "id": "W-133"
+   },
+   {
+    "kind": "התיאור שמופיע בגוגל",
+    "parts": [
+     {
+      "he": "דוגמאות לאוטומציה לעסקים — פניות, לקוחות, חנויות, תיאומים ונתונים. כולל קישור לפורטל לקוחות שנבנה.",
+      "en": "Business automation examples — inquiries, clients, stores, scheduling, and data. Includes a link to a completed customer portal.",
+      "accent": false
+     }
+    ],
+    "page": "work.html",
+    "attr": true,
+    "id": "W-134"
+   }
+  ]
+ },
+ {
+  "page": "מדיניות פרטיות",
+  "group": "מדיניות פרטיות",
+  "rows": [
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מסמך משפטי",
+      "en": "Legal document",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-001"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "מדיניות",
+      "en": "Privacy",
+      "accent": false
+     },
+     {
+      "he": "פרטיות",
+      "en": "Policy",
+      "accent": true
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-002"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עודכן לאחרונה: 9 במאי 2026",
+      "en": "Last updated: May 9, 2026",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-003"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אנחנו ב-Automation Club (להלן: \"אנחנו\", \"החברה\") מכבדים את פרטיותך. מסמך זה מסביר איזה מידע נאסף בעת שימוש באתר ובשירותים שלנו, איך אנחנו משתמשים בו, עם מי הוא עשוי להיחשף, ואילו זכויות עומדות לך לפי דין — לרבות חוק הגנת הפרטיות, התשמ\"א-1981, ותקנות ה-GDPR למבקרים מהאיחוד האירופי.",
+      "en": "We at Automation Club (\"we\", \"the company\") respect your privacy. This document explains what information is collected when you use our site and services, how we use it, with whom it may be shared, and what rights you have under law — including Israel’s Protection of Privacy Law, 5741-1981, and the GDPR for visitors from the European Union.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-004"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "1. איזה מידע נאסף",
+      "en": "1. What information is collected",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-005"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מידע שאתה מוסר ביוזמתך — בעת מילוי טופס יצירת קשר, קביעת שיחת ייעוץ או פנייה אלינו במייל/וואטסאפ:",
+      "en": "Information you provide voluntarily — when filling out a contact form, booking a consultation, or reaching out to us by email/WhatsApp:",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-006"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שם מלא",
+      "en": "Full name",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-007"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כתובת דוא\"ל",
+      "en": "Email address",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-008"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מספר טלפון",
+      "en": "Phone number",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-009"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שם החברה / תפקיד (אופציונלי)",
+      "en": "Company name / role (optional)",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-010"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תוכן ההודעה והקשר העסקי שאתה מתאר",
+      "en": "The message content and the business context you describe",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-011"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מידע שנאסף אוטומטית בעת הגלישה:",
+      "en": "Information collected automatically while browsing:",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-012"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "כתובת IP, סוג דפדפן, מערכת הפעלה",
+      "en": "IP address, browser type, operating system",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-013"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דפים שנצפו, זמן שהייה, מקור ההגעה (Referrer)",
+      "en": "Pages viewed, time on site, referral source (Referrer)",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-014"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מזהי קוקיז ומדידה אנליטית",
+      "en": "Cookie identifiers and analytics measurement",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-015"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "2. למה משתמשים במידע",
+      "en": "2. How the information is used",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-016"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "ליצירת קשר חוזר עם פניות שהתקבלו דרך האתר",
+      "en": "To follow up on inquiries received through the site",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-017"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "למתן ההצעה / השירות עליו סוכם",
+      "en": "To provide the proposal / service agreed upon",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-018"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לשיפור האתר, חוויית המשתמש, וניתוח ביצועים",
+      "en": "To improve the site, user experience, and analyze performance",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-019"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לעמידה בחובות חוקיות (חשבוניות, רישומים מס-רגולטוריים)",
+      "en": "To comply with legal obligations (invoices, tax/regulatory records)",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-020"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "למשלוח עדכונים על השירות — רק למי שאישר במפורש או שהוא לקוח קיים, ובכפוף לאפשרות הסרה בכל עת",
+      "en": "To send service updates — only to those who explicitly opted in or are existing clients, and subject to opt-out at any time",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-021"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "3. בסיס חוקי לעיבוד",
+      "en": "3. Legal basis for processing",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-022"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "העיבוד מתבצע על אחד מהבסיסים הבאים: הסכמתך, ביצוע חוזה / צעדים טרום-חוזיים שביקשת, חובה חוקית, או אינטרס לגיטימי שלנו (למשל אבטחת מידע ומניעת הונאות) — בכפוף לזכויותיך.",
+      "en": "Processing is carried out on one of the following bases: your consent, performance of a contract / pre-contractual steps you requested, a legal obligation, or our legitimate interest (e.g. information security and fraud prevention) — subject to your rights.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-023"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "4. שיתוף עם צדדים שלישיים",
+      "en": "4. Sharing with third parties",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-024"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "איננו מוכרים מידע אישי. אנחנו עשויים לשתף מידע עם ספקי שירות שמאפשרים לנו להפעיל את העסק, ובמסגרת המוגדרת לכך בלבד:",
+      "en": "We do not sell personal information. We may share information with service providers that enable us to run the business, and only within the scope defined for that purpose:",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-025"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תשתית ואחסון אתר",
+      "en": "Site infrastructure & hosting",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-026"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דומיין ו-DNS",
+      "en": "Domain & DNS",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-027"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "ניהול לקוחות ופניות",
+      "en": "Client & inquiry management",
+      "accent": false
+     },
+     {
+      "he": "— מערכות CRM ואוטומציה (Make, n8n, Google Workspace וכד')",
+      "en": "— CRM & automation systems (Make, n8n, Google Workspace, etc.)",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-028"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תקשורת",
+      "en": "Communication",
+      "accent": false
+     },
+     {
+      "he": "— ספקי דוא\"ל ו-WhatsApp Business",
+      "en": "— email providers & WhatsApp Business",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-029"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אנליטיקה",
+      "en": "Analytics",
+      "accent": false
+     },
+     {
+      "he": "— כלי מדידה אנונימיים (אם פעילים)",
+      "en": "— anonymous measurement tools (if active)",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-030"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "חלק מהספקים שוכנים מחוץ לישראל / לאיחוד האירופי. ההעברה מתבצעת בכפוף להגנות מקובלות (Standard Contractual Clauses, מנגנוני adequacy וכו').",
+      "en": "Some providers are located outside Israel / the European Union. Transfers are carried out subject to accepted safeguards (Standard Contractual Clauses, adequacy mechanisms, etc.).",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-031"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "5. קוקיז ומדידה",
+      "en": "5. Cookies & measurement",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-032"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "האתר עשוי להשתמש בקוקיז חיוניים (לתפקוד תקין) ובקוקיז אנליטיים (למדידה והבנת השימוש). תוכל להגדיר את הדפדפן לחסום או למחוק קוקיז — ייתכן שחלקים מהאתר לא יפעלו תקין כתוצאה.",
+      "en": "The site may use essential cookies (for proper functioning) and analytics cookies (to measure and understand usage). You can set your browser to block or delete cookies — as a result, parts of the site may not work properly.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-033"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "6. שמירת מידע",
+      "en": "6. Data retention",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-034"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "נשמור מידע אישי כל עוד הוא נדרש למטרות שלשמן נאסף, לעמידה בחובות חוקיות (למשל מס הכנסה — 7 שנים), או להגנה משפטית. מידע שאינו נדרש עוד יימחק או יוסב לאנונימי.",
+      "en": "We retain personal information as long as it’s needed for the purposes it was collected for, to meet legal obligations (e.g. income tax — 7 years), or for legal defense. Information no longer needed is deleted or anonymized.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-035"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "7. הזכויות שלך",
+      "en": "7. Your rights",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-036"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "עיון",
+      "en": "Access",
+      "accent": false
+     },
+     {
+      "he": "— לבקש לראות את המידע שמוחזק עליך",
+      "en": "— to request to see the information held about you",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-037"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תיקון",
+      "en": "Correction",
+      "accent": false
+     },
+     {
+      "he": "— לבקש שמידע שגוי יתוקן",
+      "en": "— to request that incorrect information be corrected",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-038"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מחיקה",
+      "en": "Deletion",
+      "accent": false
+     },
+     {
+      "he": "— לבקש מחיקת מידע (בכפוף לחובות שמירה חוקיות)",
+      "en": "— to request deletion of information (subject to legal retention obligations)",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-039"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "חזרה מהסכמה",
+      "en": "Withdraw consent",
+      "accent": false
+     },
+     {
+      "he": "— לבטל הסכמה למשלוח דיוור או עיבוד שמתבסס על הסכמה",
+      "en": "— to withdraw consent to mailings or processing that relies on consent",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-040"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "תלונה",
+      "en": "Complaint",
+      "accent": false
+     },
+     {
+      "he": "— להגיש תלונה לרשות להגנת הפרטיות (ישראל) או לרשות הפיקוח הרלוונטית באיחוד האירופי",
+      "en": "— to file a complaint with the Privacy Protection Authority (Israel) or the relevant supervisory authority in the EU",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-041"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "לפניות בנושאי פרטיות:",
+      "en": "For privacy inquiries:",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-042"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "8. אבטחת מידע",
+      "en": "8. Information security",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-043"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "אנחנו נוקטים אמצעים סבירים להגנה על המידע — תעבורה מוצפנת ב-HTTPS, הרשאות גישה מבוקרות, גיבויים, ועדכוני אבטחה לתשתיות. עם זאת, אין מערכת מוגנת ב-100% — לא ניתן להבטיח אבטחה מוחלטת.",
+      "en": "We take reasonable measures to protect the information — HTTPS-encrypted traffic, controlled access permissions, backups, and security updates to our infrastructure. That said, no system is 100% secure — absolute security cannot be guaranteed.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-044"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "9. קטינים",
+      "en": "9. Minors",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-045"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "השירות מיועד לבעלי ומנהלי עסקים מעל גיל 18. איננו אוספים ביודעין מידע ממי שמתחת לגיל 18.",
+      "en": "The service is intended for business owners and managers over the age of 18. We do not knowingly collect information from anyone under 18.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-046"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "10. שינויים במדיניות",
+      "en": "10. Changes to this policy",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-047"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "מדיניות זו עשויה להתעדכן מעת לעת. הגרסה המעודכנת תפורסם בעמוד זה עם תאריך עדכון חדש. שינוי מהותי יקבל הודעה בולטת מראש.",
+      "en": "This policy may be updated from time to time. The updated version will be published on this page with a new update date. A material change will be given prominent notice in advance.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-048"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כותרת",
+    "parts": [
+     {
+      "he": "11. יצירת קשר",
+      "en": "11. Contact",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-049"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "שאלה, בקשה, או תלונה בנושא פרטיות:",
+      "en": "A question, request, or complaint about privacy:",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-050"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "",
+    "parts": [
+     {
+      "he": "דוא\"ל:",
+      "en": "Email:",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-051"
+   },
+   {
+    "shared": false,
+    "group": "מדיניות פרטיות",
+    "kind": "כפתור / קישור",
+    "parts": [
+     {
+      "he": "חזרה לעמוד הבית",
+      "en": "Back to the homepage",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "id": "P-052"
+   }
+  ]
+ },
+ {
+  "page": "מדיניות פרטיות",
+  "group": "מאחורי הקלעים: כותרת הלשונית, תיאור לגוגל ושדות בטופס",
+  "rows": [
+   {
+    "kind": "כותרת הלשונית בדפדפן",
+    "parts": [
+     {
+      "he": "מדיניות פרטיות · Automation Club",
+      "en": "Privacy Policy · Automation Club",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "attr": true,
+    "id": "P-053"
+   },
+   {
+    "kind": "התיאור שמופיע בגוגל",
+    "parts": [
+     {
+      "he": "מדיניות הפרטיות של Automation Club — איזה מידע נאסף, איך משתמשים בו, ומה הזכויות שלך.",
+      "en": "Automation Club's privacy policy — what data is collected, how it's used, and your rights.",
+      "accent": false
+     }
+    ],
+    "page": "privacy.html",
+    "attr": true,
+    "id": "P-054"
+   }
+  ]
+ }
+]

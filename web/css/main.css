@@ -890,6 +890,23 @@ body.menu-open { overflow: hidden; }
   margin-bottom: 4px;
 }
 
+/* Live project link inside reveal */
+.reveal-block .case-link {
+  font-family: 'Assistant', 'Heebo', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #d6c4ac;                       /* secondary */
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(214,196,172,0.4);
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+.reveal-block .case-link:hover,
+.reveal-block .case-link:focus-visible {
+  color: #bec6e0;                       /* primary */
+  text-decoration-color: currentColor;
+}
+
 /* Stack chips inside reveal */
 .case-tag-row {
   display: flex;

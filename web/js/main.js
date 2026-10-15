@@ -329,3 +329,30 @@
   window.addEventListener('resize', onScroll);
   update();
 })();
+
+/* ---------- 10. Send contact details through WhatsApp ---------- */
+(function () {
+  const form = document.getElementById('lead-form');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const phone = String(data.get('phone') || '').trim();
+    const details = String(data.get('message') || '').trim();
+    const channel = String(data.get('channel') || 'whatsapp');
+    const english = document.documentElement.lang === 'en';
+    const contact = english
+      ? ({ whatsapp: 'WhatsApp', phone: 'Phone call', both: 'Either works' }[channel] || 'WhatsApp')
+      : ({ whatsapp: 'וואטסאפ', phone: 'שיחת טלפון', both: 'מה שנוח' }[channel] || 'וואטסאפ');
+    const lines = english
+      ? [`Hi, I'd like to discuss an automation for my business.`, `Name: ${name}`, `Phone: ${phone}`, `Preferred contact: ${contact}`]
+      : [`היי, אשמח לדבר על אוטומציה לעסק שלי.`, `שם: ${name}`, `טלפון: ${phone}`, `איך נוח לחזור אליי: ${contact}`];
+    if (details) lines.push((english ? 'The task I want to solve: ' : 'המשימה שאני רוצה לפתור: ') + details);
+
+    window.location.assign(`https://wa.me/972525755705?text=${encodeURIComponent(lines.join('\n'))}`);
+  });
+})();

@@ -29,3 +29,6 @@ research_*.json
 
 # Local dev server
 web/_devserver.py
+
+# local venv for scripts/site_text.py
+.venv-text/
